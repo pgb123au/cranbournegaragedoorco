@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What kind of garage doors do most Narre Warren homes have?", "acceptedAnswer": { "@type": "Answer", "text": "Around 80% of Narre Warren and Narre Warren South homes have builder-grade Colorbond sectional doors fitted between 2005 and 2018, plus a basic chain-drive opener. About 15% are roller doors (mostly older single-garage homes around the original Narre Warren township). The remaining 5% are tilt doors or side-hung timber doors on pre-1990s homes. The repair and replacement work is heavily weighted to that 80% group right now — those doors are 7–18 years old and in the prime failure window." }},
+    { "@type": "Question", "name": "Can you upgrade a chain-drive opener to belt-drive without changing the door?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — that's one of our most-requested jobs. The track and door stay; we just swap the opener unit and rail. Takes 60–90 minutes on site, costs $700–$1,400 supplied and fitted depending on model. We default to Merlin SilentDrive Essential, B&D Smart Phantom or Centurion Reno. Smart-home pairing (Google Home / Alexa / HomeKit) and two new remotes included. Battery backup is a $150–$250 add-on worth doing in the growth-corridor blackout-prone areas." }},
+    { "@type": "Question", "name": "My opener is dead but I need to get my car out — what do I do?", "acceptedAnswer": { "@type": "Answer", "text": "Pull the manual release cord (the red handle hanging from the opener rail). That disconnects the door from the opener so you can lift it by hand. Important caveat: if a spring is broken, do NOT pull the release — the door is no longer counterbalanced and will crash down. Phone us instead. If the spring is intact and the door lifts easily by hand once you've released it, you're fine to manually open it, drive out, and book a repair for later that day." }}
+  ]
+};
+---
+<Layout
+  title="Garage Doors Narre Warren | Install & Repair | (03) 9003 0108"
+  description="Garage door installation, repair and motor replacement for Narre Warren and Narre Warren South — broken-spring same-day call-out, quiet belt-drive motor upgrades, new Colorbond sectional doors. Casey growth corridor specialists."
+  canonical="https://cranbournegaragedoorco.com.au/narre-warren/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Narre Warren &middot; Narre Warren South &middot; Narre Warren North</span>
+      <h1>Garage doors in <span class="accent">Narre Warren</span>.</h1>
+      <p class="hero-sub">
+        Narre Warren is the heart of the Casey growth corridor &mdash; thousands of
+        double-storey homes on 350&ndash;500m&sup2; blocks with builder-grade
+        Colorbond sectional doors, most fitted between 2005 and 2018, most now
+        in the 7&ndash;18 year window when springs break and openers retire.
+        We&rsquo;re here multiple times every week.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Narre Warren</span>
+      <h2>The Narre Warren garage door story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>The chain-drive opener replacement boom.</h3>
+        <p>
+          Most Narre Warren estate homes got the cheapest opener the builder
+          offered &mdash; a 600N chain-drive unit with a single remote and no
+          battery backup. At 5am they sound like roadworks. The single
+          fastest-growing job category in this suburb is <strong>chain-to-belt
+          opener swaps</strong> &mdash; we keep the existing door and just
+          replace the noisy chain-drive with a quiet belt-drive (Merlin
+          SilentDrive, B&amp;D Smart Phantom, Centurion Reno). 60&ndash;90
+          minutes on site, $700&ndash;$1,400 supplied and fitted, smart-home
+          paired before we leave.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Bedroom-over-garage layouts.</h3>
+        <p>
+          The double-storey Narre Warren house plan from the 2005&ndash;2018
+          era usually has the master bedroom or a kids&rsquo; bedroom directly
+          above the double garage. With a chain-drive opener you hear every
+          cycle; with a belt-drive you barely hear anything. This is the single
+          biggest quality-of-life upgrade for $700&ndash;$1,400 we can do in
+          this suburb.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Builder-grade spring failure curve.</h3>
+        <p>
+          The 10,000-cycle extension and torsion springs the volume builders
+          spec break right on schedule for a busy family door. A four-cycle-a-day
+          door uses up its 10,000 cycles in seven years. Standard same-day
+          spring repair includes upgrading to 25,000-cycle commercial-grade
+          springs so the next failure is more than 15 years away.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Class M reactive-clay slab shift.</h3>
+        <p>
+          Same clay that wrecks driveways subtly shifts garage slabs by
+          5&ndash;15mm seasonally. After 10+ years that pulls the door tracks
+          out of plumb &mdash; the door binds on one side, the bottom seal
+          gaps. 45-minute re-alignment job, $180&ndash;$280, buys another
+          5&ndash;7 years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Narre Warren jobs.</h3>
+        <ul>
+          <li>Chain-to-belt opener upgrade on 2010-vintage estate home ($800&ndash;$1,400 fitted)</li>
+          <li>Same-day broken-spring repair on builder-grade double sectional ($350&ndash;$650)</li>
+          <li>New Colorbond insulated sectional + smart Wi-Fi opener ($2,800&ndash;$4,800)</li>
+          <li>Battery-backup retrofit for blackout-prone growth-corridor blocks ($150&ndash;$250 add-on)</li>
+          <li>Side-by-side double single-doors converted to one wide sectional ($3,500&ndash;$5,200)</li>
+          <li>Smart-home integration (Google Home / Alexa / HomeKit) on existing opener ($300&ndash;$600)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Same-day Narre Warren garage door call-out.</h2>
+        <p>Quiet motor upgrades, builder-grade spring fixes, new installs &mdash; we&rsquo;re in Narre Warren every week.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

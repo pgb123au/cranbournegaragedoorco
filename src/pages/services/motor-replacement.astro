@@ -1,0 +1,130 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How much does a new garage door motor cost installed in Cranbourne?", "acceptedAnswer": { "@type": "Answer", "text": "Standard quiet belt-drive opener (Merlin SilentDrive Essential, B&D Smart Phantom, Centurion Reno) supplied and installed is $700–$1,000. Premium smart Wi-Fi opener with battery backup, Google Home / Alexa / HomeKit support and full diagnostics is $1,100–$1,600. Both include two new remotes, wall-button, full programming, smart-app pairing, removal of the old motor, and a 5-year manufacturer warranty." }},
+    { "@type": "Question", "name": "Is a belt-drive really that much quieter than a chain-drive?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — measurably so. A chain-drive opener runs around 65–72 dB at the unit (think loud vacuum cleaner). A belt-drive runs 50–55 dB (quiet conversation). With a bedroom directly above the garage — the standard layout in Cranbourne East, Berwick Springs, Narre Warren South — the difference is the difference between waking the kids at 6am and not waking them. The price difference is $150–$250 over a chain-drive. We default to belt-drive on every install." }},
+    { "@type": "Question", "name": "What is battery backup and do I need it?", "acceptedAnswer": { "@type": "Answer", "text": "Battery backup is a sealed lead-acid or lithium pack inside the opener that powers the motor for 20–50 cycles during a blackout. The Casey growth corridor has predictable blackouts during summer storms — without battery backup, your car is trapped in the garage unless you pull the manual release. The retrofit cost is $150–$250 over a standard opener. We recommend it on every Cranbourne / Berwick / Narre Warren install — it's the cheapest 'I never have to think about this again' upgrade on the project." }},
+    { "@type": "Question", "name": "Will a smart opener work with Google Home, Alexa and HomeKit?", "acceptedAnswer": { "@type": "Answer", "text": "Most B&D Smart, Merlin MyQ and Centurion Reno openers work with Google Home and Alexa via the manufacturer's cloud bridge. Apple HomeKit is more limited — B&D's HomeKit-certified models work natively, others need a third-party Homebridge plugin. We pair the smart app while we're on site and test 'Hey Google, close the garage' / 'Alexa, is the garage open?' before we leave. Geofencing (open when I drive home) and away-from-home alerts work out of the box." }},
+    { "@type": "Question", "name": "Can I keep my existing door and just upgrade the motor?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely — this is one of our most-requested upgrades. We disconnect the old opener, fit a new motor unit, run a new rail along the ceiling, fit new safety sensors and wall button, pair two new remotes, pair the smart app. 60–90 minutes on site. The door doesn't change at all; just the motor. Common reasons to do this: noisy chain-drive waking the upstairs bedroom, broken 1990s opener with obsolete parts, want smart-home integration, want battery backup for storms." }},
+    { "@type": "Question", "name": "How long do garage door motors actually last?", "acceptedAnswer": { "@type": "Answer", "text": "Chain-drive motors: 10–15 years typical, the drive gear wears down. Belt-drive motors: 15–20 years typical, the belt doesn't stretch the way a chain does and there's no metal-on-metal wear. Smart opener with battery backup: the backup battery itself needs replacement at 4–6 years ($60–$120). The motor logic board itself is usually still good at 20 years. Premium openers (B&D Premium, Merlin SilentDrive Pro) come with a 5-year warranty." }},
+    { "@type": "Question", "name": "Do you replace the springs at the same time as a motor swap?", "acceptedAnswer": { "@type": "Answer", "text": "We check them — if they're original builder-grade 10,000-cycle springs and the door is more than 7 years old, we recommend replacing at the same time. The cost to replace springs during a motor swap is much lower than calling us back for an emergency 6 months later when the spring breaks ($150–$300 vs $250–$550 emergency). It's a 'while we're here' upgrade that saves money long-term." }}
+  ]
+};
+---
+<Layout
+  title="Garage Door Motor Replacement Cranbourne | Quiet Belt-Drive, Smart Openers | (03) 9003 0108"
+  description="Garage door motor replacement for Cranbourne and the City of Casey — quiet belt-drive upgrades, smart Wi-Fi openers (Google Home / Alexa / HomeKit), battery backup for blackouts. $700–$1,600 supplied and fitted. Merlin, B&D Smart, Centurion."
+  canonical="https://cranbournegaragedoorco.com.au/services/motor-replacement/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Quiet, smart, battery-backed</span>
+      <h1>Garage door motor replacement in <span class="accent">Cranbourne &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Quiet belt-drive upgrades for bedroom-over-garage homes. Smart Wi-Fi
+        openers with Google Home, Alexa and HomeKit. Battery backup so the
+        car doesn&rsquo;t get trapped during a Casey summer storm. Keep your
+        existing door, just swap the motor &mdash; 90 minutes on site, $700&ndash;$1,600 fitted.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The four openers we install most often.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Merlin SilentDrive Essential</strong> &mdash; quiet belt-drive, 600N, two remotes, no smart features. The budget bedroom-over-garage upgrade. $700&ndash;$900 fitted.</li>
+          <li><strong>B&amp;D Smart Phantom (Smart-Drive)</strong> &mdash; quiet belt-drive, Wi-Fi, B&amp;D Smart app, Google Home / Alexa compatible. The default. $950&ndash;$1,250 fitted.</li>
+          <li><strong>Centurion Reno</strong> &mdash; Australian-made, quiet belt-drive, Wi-Fi, smart app, battery backup standard. Excellent local support. $1,050&ndash;$1,350 fitted.</li>
+          <li><strong>Merlin SilentDrive Pro / Premium</strong> &mdash; premium belt-drive, 800N (handles heavier insulated doors), smart Wi-Fi, battery backup, HomeKit-ready, LED area light. $1,250&ndash;$1,600 fitted.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why people replace their motor (without replacing the door).</h3>
+        <ul>
+          <li><strong>Noise.</strong> Old chain-drive opener directly under the master bedroom. Single most common reason. Belt-drive solves it.</li>
+          <li><strong>Reliability.</strong> 1990s screw-drive or chain-drive opener parts are obsolete; the gear strips and there&rsquo;s no replacement gear. New motor for $700&ndash;$1,400 vs a $350 repair on a 25-year-old motor that&rsquo;ll fail again.</li>
+          <li><strong>Smart home.</strong> Customer wants Google Home / Alexa control, geofenced auto-open when arriving home, away-from-home alerts if door is left open.</li>
+          <li><strong>Battery backup.</strong> Sick of being trapped in the garage during Casey storm blackouts. $150&ndash;$250 over a standard opener buys 20&ndash;50 cycles of backup.</li>
+          <li><strong>Safety.</strong> Old opener has lost auto-reverse sensitivity, lost photoelectric sensors, lost manual-release function. AS 4505 non-compliant. New opener is compliant out of the box.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Belt-drive vs chain-drive vs screw-drive vs direct-drive.</h3>
+        <ul>
+          <li><strong>Chain-drive (old default):</strong> Loud (~65&ndash;72 dB at the unit). Cheap. 10&ndash;15 year life. Metal chain stretches and rattles as it ages. Avoid for bedroom-above-garage homes.</li>
+          <li><strong>Belt-drive (modern default):</strong> Quiet (~50&ndash;55 dB). Slightly pricier than chain. 15&ndash;20 year life. The rubber/kevlar belt doesn&rsquo;t stretch and runs near-silent. The right choice for almost every modern Casey home.</li>
+          <li><strong>Screw-drive (legacy):</strong> Threaded steel rod drives the trolley. Quiet when new, very loud as the grease dries out. 15&ndash;20 year life if maintained. Rare in current installs.</li>
+          <li><strong>Direct-drive (premium European):</strong> Motor moves along the rail with the door. Almost silent. Expensive. Niche &mdash; usually high-end European brands like Hörmann.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Smart-home pairing &mdash; what works with what.</h3>
+        <ul>
+          <li><strong>Google Home / Google Assistant</strong> &mdash; works with B&amp;D Smart, Merlin MyQ, Centurion Reno via each brand&rsquo;s cloud bridge. Voice commands: "Hey Google, open the garage", "Hey Google, is the garage open?".</li>
+          <li><strong>Amazon Alexa</strong> &mdash; same brands, same cloud bridges. Same voice commands.</li>
+          <li><strong>Apple HomeKit</strong> &mdash; B&amp;D&rsquo;s HomeKit-certified models work natively. Others need Homebridge plugin running on a Raspberry Pi or Mac mini.</li>
+          <li><strong>Geofencing</strong> &mdash; phone detects when you&rsquo;re within 300m of home, opener triggers automatically. Works on all four major opener apps.</li>
+          <li><strong>Away alerts</strong> &mdash; phone notification if door is open more than 15 minutes. Useful security feature for forgetful family members.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Battery backup &mdash; why it matters in Casey.</h3>
+        <p>
+          The Casey growth corridor has predictable summer-storm blackouts. Without
+          battery backup, a power outage means the garage door is unusable until
+          power returns. You can pull the manual release cord and lift the door
+          by hand, but it&rsquo;s a hassle in the rain with shopping in your
+          arms. Premium openers (Centurion Reno, Merlin SilentDrive Pro, B&amp;D
+          Premium) include battery backup as standard; cheaper models accept it
+          as a $150&ndash;$250 add-on. The backup pack itself needs replacement at
+          4&ndash;6 years for $60&ndash;$120.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The motor swap install &mdash; what happens.</h3>
+        <ol>
+          <li><strong>Diagnose existing opener (10 min):</strong> Confirm age, brand, why it&rsquo;s being replaced.</li>
+          <li><strong>Disconnect &amp; remove (20 min):</strong> Power off, dismount the old unit, take the old rail down. Old opener goes with us for recycling.</li>
+          <li><strong>Install new opener (30&ndash;45 min):</strong> Mount new motor head, fit new rail to door, run safety-sensor wiring, fit new wall button, splice in any low-voltage wiring needed.</li>
+          <li><strong>Calibrate &amp; program (15&ndash;20 min):</strong> Set up/down limits, set force sensitivity (auto-reverse), pair two remotes, pair the smart app, test cycle 10 times.</li>
+          <li><strong>Hand-over (5&ndash;10 min):</strong> Walk you through the app, manual release demo, safety-sensor demo, warranty paperwork emailed.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we install motors.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Quiet, smart, battery-backed motor &mdash; fitted in 90 minutes.</h2>
+        <p>Keep your existing door. Replace just the motor. Quieter, smarter, better. $700&ndash;$1,600 fitted.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

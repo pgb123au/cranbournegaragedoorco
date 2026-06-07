@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How long does a new garage door installation take?", "acceptedAnswer": { "@type": "Answer", "text": "A straightforward swap of an existing door (out with the old, in with the new in the same opening) is 3–5 hours on site for a single, 5–7 hours for a double. A full new install including new opener and smart-home pairing adds 1–2 hours. We always test the door for 30 cycles before leaving and walk you through the manual release, auto-reverse, safety sensors and the smart-opener app." }},
+    { "@type": "Question", "name": "Sectional vs roller vs tilt — which should I choose?", "acceptedAnswer": { "@type": "Answer", "text": "Sectional is the default for 90% of new installs — quietest, best insulated, most secure, lifts vertically so it doesn't arc into the driveway. Roller doors win where ceiling height is very tight (the roll bunches at the top), or for budget single-garage installs. Tilt doors are a legacy choice — we still install them when an original tilt needs like-for-like replacement, but for any new build or major upgrade we recommend sectional." }},
+    { "@type": "Question", "name": "Can I get a timber-look door without the timber maintenance?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — both B&D (Aero Timber) and Steel-Line (Cedar Look / Wood-grain) make insulated steel sectional doors with a printed timber-grain finish that's surprisingly convincing at 5m+ distance. Zero maintenance, same warranty as standard Colorbond. Adds $400–$900 to a standard install. For genuine timber doors (Western Red Cedar, Pacific Cedar), we install those too but flag the 12-month re-oil maintenance and the 15-year average life cycle." }},
+    { "@type": "Question", "name": "Do you remove and dispose of the old door?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, included in the install price. We take the old door, opener, tracks, springs and hardware away with us and recycle the steel via the local Casey scrap yard. The garage is left swept, the new door is tested, the warranty paperwork is filed in your inbox before we leave site." }},
+    { "@type": "Question", "name": "Will the new door colour-match my Colorbond roof?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The four major brands (B&D, Steel-Line, Dominator, Centurion) all carry the full Colorbond range plus the most popular custom colours — Surfmist, Monument, Basalt, Woodland Grey, Dune, Shale Grey, Wallaby, Cottage Green. On the assessment we colour-match to your roof or guttering, whichever the front-of-house elevation reads off most strongly." }},
+    { "@type": "Question", "name": "Is there a warranty on the new door and opener?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Manufacturer warranties: 5–10 years on the door panels and tracks (depends on model — B&D Premium 10 years, Steel-Line Standard 7 years, Centurion 5 years), 5 years on premium belt-drive openers, 2 years on chain-drive openers. We add our own 12-month workmanship warranty on the installation. We're approved installers for all four major brands so warranty claims are handled in-house — you don't chase the manufacturer." }}
+  ]
+};
+---
+<Layout
+  title="Garage Door Installation Cranbourne | New Sectional & Roller Doors | (03) 9003 0108"
+  description="New garage door installation for Cranbourne and the City of Casey — insulated Colorbond sectional, roller and tilt doors. Single $1.8K–$3K, double $2.5K–$5K, premium $4K–$8K. B&D, Steel-Line, Dominator, Centurion."
+  canonical="https://cranbournegaragedoorco.com.au/services/garage-door-installation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">New install, supplied &amp; fitted</span>
+      <h1>Garage door installation in <span class="accent">Cranbourne &amp; the City of Casey</span>.</h1>
+      <p class="hero-sub">
+        New sectional, roller or tilt doors &mdash; insulated Colorbond, timber-look,
+        single or double. Plus opener, remotes, smart-home pairing, removal of the
+        old door, manufacturer warranty paperwork. Most installs done in a single day.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book an on-site quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What a new garage door install actually costs.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Single Colorbond sectional + chain-drive opener:</strong> $1,800&ndash;$2,400 supplied and installed. Budget end of the range &mdash; basic motor, two remotes, standard insulation.</li>
+          <li><strong>Single insulated sectional + quiet belt-drive:</strong> $2,200&ndash;$3,000. The recommended default for single garages with bedrooms above.</li>
+          <li><strong>Double Colorbond sectional + opener:</strong> $2,500&ndash;$3,800. Standard 5.0m wide door, belt-drive opener.</li>
+          <li><strong>Double premium insulated + smart Wi-Fi opener:</strong> $4,000&ndash;$5,500. Double-skin insulated panel, Merlin/B&amp;D Smart opener, battery backup, two remotes.</li>
+          <li><strong>Premium timber-look insulated double:</strong> $5,500&ndash;$8,000. Aero Timber or Cedar-Look panel, premium opener, full smart-home integration.</li>
+          <li><strong>Genuine Western Red Cedar:</strong> $6,500&ndash;$11,000 single or double. Beautiful, expensive, needs oiling every 12&ndash;18 months.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">The four door types we install.</h3>
+        <ul>
+          <li><strong>Sectional doors</strong> &mdash; horizontal panels that lift vertically then slide along the ceiling. The modern default. Best insulation, quietest, most secure, no driveway arc. ~$1,800&ndash;$8,000 installed.</li>
+          <li><strong>Roller doors</strong> &mdash; one continuous curtain that rolls up into a drum at the top. Budget-friendly, durable, simple. Best where ceiling height is tight or budget is tight. ~$1,500&ndash;$3,200 installed.</li>
+          <li><strong>Tilt doors</strong> &mdash; single rigid panel pivots up and out. Legacy choice, only installed as like-for-like replacement on heritage homes where the architecture demands it. ~$1,800&ndash;$3,000 installed.</li>
+          <li><strong>Side-hung / barn-style doors</strong> &mdash; double leaves swing outwards. Rare modern choice, occasionally on country-style homes in the outer Casey rural areas. ~$2,500&ndash;$5,000 installed.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Brands we stock.</h3>
+        <ul>
+          <li><strong>B&amp;D Doors</strong> &mdash; the most-installed Australian brand. Wide model range from budget Firmadoor to premium Panelift Icon. 10-year door warranty on premium models. Smart Wi-Fi openers integrate with Google Home, Alexa and HomeKit.</li>
+          <li><strong>Steel-Line</strong> &mdash; strong on insulated double-skin sectionals and timber-look finishes. Cedar-Look range is very convincing. 7-year warranty standard.</li>
+          <li><strong>Dominator</strong> &mdash; competitive pricing, solid mid-range performance, good for new estate builds. Their insulated sectionals offer the best value in the $2.5K&ndash;$4K bracket.</li>
+          <li><strong>Centurion</strong> &mdash; Australian-made, strong roller-door range, excellent smart opener (Reno) with Wi-Fi and battery backup as standard. Local support is great.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Install timeline.</h3>
+        <ol>
+          <li><strong>Phone (5 min):</strong> Door type, opening size, single vs double, smart-home requirements, timeframe.</li>
+          <li><strong>Site measure (30&ndash;45 min, free):</strong> Measure opening height &amp; width, check headroom, side-clearance, slab condition, power-point position. Talk through brand and finish options with samples.</li>
+          <li><strong>Written fixed quote (48 hours):</strong> Door spec, opener spec, hardware, install cost, removal of old door, warranty terms. No hidden charges.</li>
+          <li><strong>Order &amp; supply (5&ndash;15 business days):</strong> Stock-colour doors land in ~7 days; custom colours 10&ndash;15.</li>
+          <li><strong>Install day:</strong> 4&ndash;8 hours on site. Old door removed and taken away. New door, opener, tracks, springs, sensors, remotes &mdash; all in. 30-cycle test before sign-off.</li>
+          <li><strong>Handover:</strong> Walk-through of auto-reverse, manual release, safety sensors, smart-opener app pairing. Warranty paperwork emailed.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Compliance &mdash; AS 4505.</h3>
+        <p>
+          Every powered door we install meets AS 4505 (Garage doors and other large
+          access doors). That means functional auto-reverse on obstruction, working
+          photoelectric safety sensors at 150&ndash;200mm above the slab, an
+          easily-reached manual release in case of power outage, and full pinch-
+          and finger-trap guards along the lateral edges. We test all four before
+          handover, every time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we install.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free on-site garage door quote.</h2>
+        <p>Brand and colour samples on the van. Fixed quote within 48 hours. Single-day install for most jobs.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Hampton Park has lots of older garages — are they harder to fit a new door to?", "acceptedAnswer": { "@type": "Answer", "text": "Slightly, but not a problem in practice. The 1980s–1990s Hampton Park brick veneer homes commonly have 2.1m ceiling heights and slightly out-of-square openings — we install with a low-headroom track kit (needs only 100mm headroom over the door) and fine-tune the door fit with adjustable side weatherseal. The result looks factory-fresh. Adds about $350–$500 to the standard install cost." }},
+    { "@type": "Question", "name": "Single garage or double — which is more common in Hampton Park?", "acceptedAnswer": { "@type": "Answer", "text": "The older Hampton Park stock (1980s–early 2000s around Hallam Road, Coral Drive, Stuart Avenue) is roughly 70% single-garage, 30% double. The newer infill releases around Somerville Road are nearly all double-garage. Pricing scales accordingly — a single insulated sectional + opener installed is $1,800–$2,800, a double is $2,500–$4,800." }},
+    { "@type": "Question", "name": "Are tilt doors still worth repairing or should I replace?", "acceptedAnswer": { "@type": "Answer", "text": "Hampton Park has more original tilt doors than the newer Casey suburbs. Honest answer: if the springs are sound and the panel is straight, a tilt door is fine to repair for $200–$400. If the panel is bent, the bottom rail is rusted, or the door has been forced when off-track, you're better off replacing with a sectional. Sectionals are quieter, better insulated, more secure and lift vertically (so they don't swing out into the driveway like a tilt door does). Full sectional + opener replacement of an old tilt is $2,500–$4,000 for a single garage." }}
+  ]
+};
+---
+<Layout
+  title="Garage Doors Hampton Park | Install & Repair | (03) 9003 0108"
+  description="Garage door installation, repair and motor replacement for Hampton Park — established 1980s–1990s homes plus newer infill. Tilt-to-sectional conversions, low-headroom installs, broken-spring same-day call-out."
+  canonical="https://cranbournegaragedoorco.com.au/hampton-park/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Hampton Park &middot; established Casey suburb</span>
+      <h1>Garage doors in <span class="accent">Hampton Park</span>.</h1>
+      <p class="hero-sub">
+        Hampton Park is older Casey &mdash; mostly 1980s&ndash;1990s brick veneer
+        homes around Hallam Road, Coral Drive and Stuart Avenue, plus newer
+        infill releases on Somerville Road. Older garages mean older doors:
+        plenty of 25+ year-old tilt and side-hung timber doors due for
+        replacement, and 1990s sectionals on their second motor.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Hampton Park</span>
+      <h2>The Hampton Park garage door story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>The tilt-to-sectional conversion is the big job here.</h3>
+        <p>
+          A lot of Hampton Park homes still have the original tilt door &mdash;
+          you know the one, single rigid panel that swings up and out, takes
+          your front bumper with it if you don&rsquo;t reverse far enough. The
+          modern equivalent is a sectional door (lifts vertically in five
+          horizontal panels, slides back along the ceiling). Sectional doors
+          are quieter, better insulated, more secure, and don&rsquo;t arc out
+          into the driveway. The conversion is straightforward &mdash; we
+          remove the tilt mechanism, fit new tracks, install the sectional,
+          fit a quiet belt-drive opener &mdash; usually a single day on site,
+          $2,500&ndash;$4,000 for a single garage.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Low-headroom installs.</h3>
+        <p>
+          A lot of older Hampton Park garages have 2.1m ceilings (modern is
+          2.4m). Standard sectional-door track kits need 300mm of headroom
+          above the door, which often won&rsquo;t fit. We use a low-headroom
+          track kit that only needs 100mm above &mdash; same door, same opener,
+          just a different track configuration. Adds $350&ndash;$500 to the
+          standard install.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Rust at the bottom rail.</h3>
+        <p>
+          The universal symptom of an old door in Hampton Park &mdash; rust at
+          the bottom 100mm of the door panel where it meets the slab. The
+          galvanised coating wears through, water pools after rain, the steel
+          rusts out from the inside. Once rust is established, you can&rsquo;t
+          repair it cost-effectively. Bottom panel replacement (on a sectional)
+          is $550&ndash;$900 if the rest of the door is sound; if there are
+          multiple problems we recommend full replacement.
+        </p>
+
+        <h3 style="margin-top: 2rem;">1990s opener replacement.</h3>
+        <p>
+          A lot of Hampton Park sectional doors are on their original 1995&ndash;2005
+          opener &mdash; the loud screw-drive units with the green LED that
+          flickers when a remote signal arrives. These are well past their
+          12&ndash;18 year design life. The good news: keep the door, just
+          swap the opener for a modern quiet belt-drive with smart-home support
+          &mdash; $700&ndash;$1,400 fitted, transforms how the garage feels.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Hampton Park jobs.</h3>
+        <ul>
+          <li>Tilt-door to sectional-door conversion on 1990s single garage ($2,500&ndash;$4,000)</li>
+          <li>Low-headroom track-kit install in 2.1m ceiling garage ($350&ndash;$500 over standard)</li>
+          <li>1990s opener swap for quiet belt-drive on existing door ($700&ndash;$1,400)</li>
+          <li>Bottom-panel rust replacement on 20-year-old sectional ($550&ndash;$900)</li>
+          <li>Spring + cable repair on Hampton Park sectional ($250&ndash;$550)</li>
+          <li>Premium insulated double + smart Wi-Fi opener on Somerville Road infill ($3,500&ndash;$5,500)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Same-day Hampton Park garage door call-out.</h2>
+        <p>Tilt-to-sectional conversions, low-headroom installs, 1990s opener swaps &mdash; we know this suburb.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

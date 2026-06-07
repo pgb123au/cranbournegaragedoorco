@@ -1,0 +1,186 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Which motor brand do you fit most often in Cranbourne?", "acceptedAnswer": { "@type": "Answer", "text": "Merlin (Chamberlain) is the volume leader in Cranbourne and across the City of Casey — roughly 55% of our installs in 2025–26, driven by the MyQ smart-home tie-in and the long parts-availability track record. B&D is second at around 25% (the Controll-A-Door series is the spec on a lot of project-builder homes in Clyde North and Botanic Ridge). Steel-Line sits around 15% (commonly paired with their own door product on whole-of-door installs). ATA, Centurion and Dominator make up the balance. We stock parts and remotes for all six brands, and we'll happily quote against your existing system rather than push a brand swap unless the old motor is genuinely end-of-life." }},
+    { "@type": "Question", "name": "How long does a motor swap actually take?", "acceptedAnswer": { "@type": "Answer", "text": "2–3 hours on site for a like-for-like swap on an existing rail (e.g. Merlin to Merlin, or B&D to B&D where the rail mounts are compatible). 3–4 hours if we're replacing the rail too — usually the case when going from a chain-drive to a belt-drive, or upgrading from a 600N to a 1000N motor on a heavier sectional door. We commission Wi-Fi pairing on site if the unit supports it (MyQ for Merlin, Tilt for B&D, Smart Home Hub for Steel-Line). Lead time from quote to install is typically 3–7 days on stocked brands and 10–14 days on Steel-Line specials." }},
+    { "@type": "Question", "name": "Belt-drive vs chain-drive — does it really matter on a Cranbourne residential install?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the bedroom shares a wall with the garage. Belt-drive runs roughly 8–12 dB quieter than chain-drive, which is the difference between 'audible from the bedroom upstairs' and 'barely registers'. For double-storey homes in Cranbourne East and Clyde North where the master bedroom is often above or beside the garage, belt-drive is what we default to. Chain-drive is still fine on detached garages, single-storey homes, or where budget is tight — a 15-year-old chain-drive in good service is honestly hard to beat for reliability." }},
+    { "@type": "Question", "name": "What does a motor swap cost in 2026?", "acceptedAnswer": { "@type": "Answer", "text": "$850–$1,150 supplied and fitted for a quality residential belt-drive (Merlin MT5580EVO, B&D Controll-A-Door Smart Phone, Steel-Line VertiBelt) on a standard single-car door. $1,150–$1,550 on a heavier double-car sectional or where the rail needs replacing. Add $80–$160 per extra remote, $250–$400 for a hardwired keypad outside, $0 for the smartphone app integration (already included on stocked motors). We provide a 5-year parts-and-labour warranty on the motor and a 12-month warranty on the install workmanship." }},
+    { "@type": "Question", "name": "Can you keep my existing remotes when you swap the motor?", "acceptedAnswer": { "@type": "Answer", "text": "Only if we're going like-for-like on the same brand and the rolling-code format matches (e.g. Merlin Security+ 2.0 to Merlin Security+ 2.0). Cross-brand swaps and most cross-generation swaps within a brand will need new remotes. We supply two remotes as standard with every motor install, and additional remotes at $80–$160 each. If you want to keep a wall-mounted Genie keypad or a hardwired button, we'll re-wire those during the install at no extra charge — these are universal in most cases." }}
+  ]
+};
+---
+<Layout
+  title="Garage Door Motor Swap-Out in Cranbourne — Merlin vs B&D vs Steel-Line | (03) 9003 0108"
+  description="The 3 most common motor brands in Cranbourne homes — reliability, parts availability, app integration, warranty terms — and the 1-week vs 2-week lead time on swap-out. Belt-drive upgrades from $850 fitted."
+  canonical="https://cranbournegaragedoorco.com.au/motor-swap-cranbourne/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Motor upgrades &middot; Cranbourne &amp; City of Casey</span>
+      <h1>Garage door motor swap-out in <span class="accent">Cranbourne</span> &mdash; Merlin, B&amp;D and Steel-Line compared.</h1>
+      <p class="hero-sub">
+        A residential garage motor has a 15&ndash;20 year design life on
+        paper, but most fail at 12&ndash;14 years from gear-train wear, board
+        capacitor failure, or limit-switch drift. Belt-drive upgrades from
+        $850 fitted, 5-year warranty, smart-home pairing included. Same-week
+        install across Cranbourne, Hampton Park, Junction Village, Botanic
+        Ridge, Clyde and Clyde North.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Send a quote request</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The three motor brands that dominate Cranbourne.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Walk down any street in Clyde North or Cranbourne East and pop the
+          inspection cover on a dozen garage motors and you&rsquo;ll see three
+          brands repeating: Merlin, B&amp;D and Steel-Line. That&rsquo;s not
+          random &mdash; it reflects which brands the project builders specced
+          through the 2015&ndash;2025 estate boom in the southern City of
+          Casey, plus the inherited preferences of the original installers.
+          Each has a genuinely different character once you live with it.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Merlin (Chamberlain).</h3>
+        <p>
+          The MT5580EVO and ProSeries models are our most-fitted residential
+          units across Cranbourne. The strengths are the MyQ smart-home
+          integration (Apple Home, Google, Alexa, IFTTT), the 5-year warranty
+          and the parts availability &mdash; Chamberlain Australia stocks
+          spares for units going back to the early 2000s. The weakness is the
+          chain-drive on the entry-level models, which is noticeable on
+          double-storey homes. We default to the belt-drive variant on
+          anything where the bedroom is above or beside the garage. Lead time:
+          3&ndash;5 days from quote to install.
+        </p>
+
+        <h3 style="margin-top: 2rem;">B&amp;D.</h3>
+        <p>
+          The Controll-A-Door series is the long-standing project-builder
+          favourite &mdash; if your Cranbourne home was finished by Metricon,
+          Carlisle, Burbank or Henley between 2015 and 2022, there&rsquo;s a
+          50/50 chance you have a B&amp;D. The strengths are the rock-solid
+          local manufacturing track record and the Tilt-A-Door app (proper
+          end-to-end encryption, no cloud-routed control). The weakness is
+          remote pricing &mdash; the rolling-code remotes are dearer than
+          Merlin&rsquo;s, and the keypads are about $50 more. Lead time:
+          5&ndash;7 days.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Steel-Line.</h3>
+        <p>
+          Steel-Line motors most often arrive as part of a whole-door package
+          &mdash; new sectional plus their VertiBelt or VertiChain motor.
+          Strengths: matched warranty (door and motor through the same
+          manufacturer), genuinely quiet belt-drive variants, premium
+          finish-quality. Weakness: stock-keeping is more centralised, so
+          lead-times stretch to 10&ndash;14 days on Steel-Line-specific parts.
+          We fit these mostly on full-door replacements rather than motor-only
+          swaps.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>When to swap vs when to repair.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Under 8 years old, single component failed (capacitor, limit switch, drive gear):</strong> repair. $250&ndash;$500, same-day, 5-year future life still on the table.</li>
+          <li><strong>8&ndash;12 years old, multiple symptoms:</strong> grey area. We&rsquo;ll quote both ways &mdash; repair if it&rsquo;s one component, swap if two or more, or if parts are no longer current production.</li>
+          <li><strong>12+ years old, anything failing:</strong> swap. The drive train, board electronics and limit-switch micro-switches are all in the same wear band &mdash; fix one and the next will go in 6&ndash;18 months.</li>
+          <li><strong>Pre-2010 motor, no rolling-code remotes:</strong> swap regardless. Fixed-code remotes can be cloned with a $30 device off eBay &mdash; this is a genuine security exposure on a residential garage.</li>
+          <li><strong>Wanting smart-home integration:</strong> swap if the motor is over 8 years old. Retrofit smart-home modules exist but rarely give a clean experience compared to a native MyQ or Tilt-A-Door pairing.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">What an honest motor-swap quote includes.</h3>
+        <p>
+          When you compare quotes, the line items to check are: motor model
+          and HP/Newton rating (1000N minimum on a double-car sectional, 600N
+          on a single-car), rail type (chain vs belt), warranty length (5
+          years is standard on premium units; anything less is the
+          builder-grade variant), number of remotes (two as standard;
+          additional are $80&ndash;$160 each), keypad inclusion, smart-home
+          commissioning (should be no extra charge), removal and disposal of
+          the old motor, and force-calibration plus AS/NZS 60335.2.95
+          compliance testing on completion.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Common questions about motor swaps.</h2>
+      <div style="max-width: 65rem;">
+        <h3>My motor is making a grinding noise &mdash; is that the drive gear?</h3>
+        <p>
+          Usually, yes. The main drive gear is a sacrificial plastic part
+          specifically designed to fail before the steel worm gear does
+          &mdash; cheaper part, easier replacement. On Merlin and Chamberlain
+          motors this is a $80&ndash;$140 part, replaced in 45&ndash;60
+          minutes. On a sub-10-year-old motor, replacing the gear is the right
+          call. On anything older, we usually recommend the full swap.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Can a new motor fit on my existing rail?</h3>
+        <p>
+          Often, yes &mdash; if you&rsquo;re staying in-brand. We have to
+          inspect the rail length, the trolley type, and the mounting brackets
+          before confirming. About 60% of like-for-like brand swaps re-use the
+          rail. The remaining 40% need a new rail, which adds roughly $180 to
+          the job and 45 minutes to the install time.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Will the new motor be compatible with Apple Home and Google?</h3>
+        <p>
+          On Merlin (MyQ) and B&amp;D (Tilt-A-Door) units fitted in the last
+          three model years &mdash; yes. We pair the unit during the install
+          &mdash; you walk in, give us your Apple Home or Google credentials
+          on your phone, and we leave with it working. No extra charge. On
+          older smart-home retrofits via Aqara, Tuya or similar third-party
+          modules &mdash; possible but less reliable.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Is the new motor compliant with the current safety standard?</h3>
+        <p>
+          Yes &mdash; AS/NZS 60335.2.95 (the safety standard for power-operated
+          doors and gates) is built into every premium residential motor sold
+          in Australia in 2026. We test the obstruction-reversal force on
+          completion (rolled-up towel under the door, door must reverse on
+          contact) and document the calibration in our handover paperwork.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Ready for a quieter, smarter garage motor?</h2>
+      <p style="max-width: 50rem; margin: 1rem auto;">
+        Belt-drive upgrades from $850 fitted, 5-year warranty, smart-home
+        integration included, same-week install across the Casey inner ring.
+        Free written quote with brand options laid out side-by-side so you
+        can compare on the things that matter &mdash; not just the sticker.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Send a quote request</a>
+      </div>
+    </div>
+  </section>
+</Layout>

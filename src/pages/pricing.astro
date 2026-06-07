@@ -1,0 +1,286 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you come same-day?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — most spring, cable, and motor repairs are same-day if you call before 12 noon. Full door installs typically 1–2 weeks lead-time for the panels."}}, {"@type": "Question", "name": "DIY spring replacement — really that dangerous?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Torsion springs are wound under 200+ lb of stored energy. Released wrong = a 2kg piece of metal through your skull. Not exaggeration. $480 callout vs $50,000 medical bills."}}, {"@type": "Question", "name": "Brand support — what do you carry?", "acceptedAnswer": {"@type": "Answer", "text": "B&D, Merlin, Steel-Line, Centurion, Chamberlain, ATA. We carry common springs and rollers on the truck for same-day repair."}}, {"@type": "Question", "name": "Smart / Wi-Fi — worth it?", "acceptedAnswer": {"@type": "Answer", "text": "Yes if you forget to close the door regularly. App + geofence-close + Apple Home / Google Home integration. $200 upgrade on a new motor."}}, {"@type": "Question", "name": "Coastal area — what about wind rating?", "acceptedAnswer": {"@type": "Answer", "text": "AS 4505-rated panels are required in cyclone zones. We use Stratco / B&D wind-rated. Costs 20-30% more than standard."}}, {"@type": "Question", "name": "Insulation — worth it?", "acceptedAnswer": {"@type": "Answer", "text": "Yes if the garage is liveable / connected to the house. R-value 1.5–2.5 panels cut heat loss / gain by 60%+. Adds ~$800–$1,500 to a double door install."}}, {"@type": "Question", "name": "What's the warranty?", "acceptedAnswer": {"@type": "Answer", "text": "5-year manufacturer on doors; 5-year on motors. 2-year workmanship on labour."}}]};
+const serviceSchema = {"@context": "https://schema.org", "@type": "Service", "serviceType": "Garage door repair and installation", "provider": {"@type": "Service", "name": "Cranbourne Garage Door Co", "telephone": "+61390030108", "url": "https://cranbournegaragedoorco.com.au", "areaServed": {"@type": "City", "name": "Cranbourne"}}, "areaServed": "Cranbourne", "url": "https://cranbournegaragedoorco.com.au/pricing/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "80", "highPrice": "180000", "offerCount": "16"}};
+const breadcrumbSchema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cranbournegaragedoorco.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://cranbournegaragedoorco.com.au/pricing/"}]};
+---
+<Layout
+  title="Garage door prices in Cranbourne 2026 | (03) 9003 0108"
+  description="Garage door prices in Cranbourne — springs, motors, panels, full install. Same-day on repairs. 2026 rates. Call (03) 9003 0108."
+  canonical="https://cranbournegaragedoorco.com.au/pricing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Sectional, roller, motor, springs — same-day on most jobs</span>
+      <h1>Garage door repair and install prices in Cranbourne — 2026 guide</h1>
+      <p class="hero-sub">Garage doors in Cranbourne fall into two pricing worlds — repair (springs, motors, panels, cables) ranges $180–$1,200, and replacement (whole-door install) ranges $1,800–$8,500. Torsion-spring failure is the #1 emergency callout, and it's a hospital-trip risk if DIY'd, so almost always worth the call.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108" aria-label="Call (03) 9003 0108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a written quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <p class="lead">Below are realistic 2026 ranges. We carry common spares on the truck for same-day on most repairs. Call (03) 9003 0108 for an exact quote.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Typical 2026 prices for garage door repair and installation in Cranbourne</h2>
+      <p>Real ranges from our books, not made-up averages. Every quote we issue is itemised against the work below.</p>
+        <table class="pricing-table">
+          <thead><tr><th>Service</th><th>Typical range (AU 2026)</th><th>What's included</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Service"><strong>Diagnostic callout</strong></td>
+              <td data-label="Price"><span class="price-range">$120 – $180</span></td>
+              <td data-label="Note">Includes opener test, spring tension check, panel and cable inspection.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Torsion spring replacement (single)</strong></td>
+              <td data-label="Price"><span class="price-range">$280 – $480</span></td>
+              <td data-label="Note">Same-day on most brands. Includes both sides where standard.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Torsion spring replacement (pair — common)</strong></td>
+              <td data-label="Price"><span class="price-range">$380 – $680</span></td>
+              <td data-label="Note">Recommended to replace as pair.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Cable replacement (per side)</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $280</span></td>
+              <td data-label="Note">After fray or break.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Roller replacement (per door)</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $380</span></td>
+              <td data-label="Note">Set of 8-10 rollers.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Track straightening / replacement</strong></td>
+              <td data-label="Price"><span class="price-range">$280 – $580</span></td>
+              <td data-label="Note">After backed-into or warped.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Bottom seal replacement</strong></td>
+              <td data-label="Price"><span class="price-range">$120 – $220</span></td>
+              <td data-label="Note">Stops draught + pest entry.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Panel replacement (single)</strong></td>
+              <td data-label="Price"><span class="price-range">$380 – $780</span></td>
+              <td data-label="Note">Same-brand panel, colour-matched.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Motor replacement (B&amp;D / Merlin / Steel-Line)</strong></td>
+              <td data-label="Price"><span class="price-range">$580 – $1,200</span></td>
+              <td data-label="Note">Like-for-like swap with new remote(s).</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Motor upgrade (smart / Wi-Fi)</strong></td>
+              <td data-label="Price"><span class="price-range">$880 – $1,400</span></td>
+              <td data-label="Note">Includes app integration.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Sectional door install (single, std)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,800 – $2,800</span></td>
+              <td data-label="Note">Standard 2.4m x 2.1m, Colorbond, includes motor.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Sectional door install (double)</strong></td>
+              <td data-label="Price"><span class="price-range">$2,400 – $3,800</span></td>
+              <td data-label="Note">Standard 4.8m x 2.1m, Colorbond, includes motor.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Roller door install (single)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,400 – $2,400</span></td>
+              <td data-label="Note">Slimmest profile, includes motor.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Roller door install (double)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,800 – $3,200</span></td>
+              <td data-label="Note">Includes motor.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Premium / insulated panel door install</strong></td>
+              <td data-label="Price"><span class="price-range">$3,500 – $7,500</span></td>
+              <td data-label="Note">Insulated, foam-core panels, premium motor.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Door removal + disposal</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $380</span></td>
+              <td data-label="Note">Old door taken away.</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="table-foot"><em>Prices indicative for Cranbourne in 2026. Final quote depends on your site — call (03) 9003 0108 for an exact number.</em></p>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card">
+      <div class="cta-card-body">
+        <h3>Need an exact price for your job?</h3>
+        <p>Most quotes ready within 24 hours of the site visit. No-obligation, free, written.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Online quote form</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What changes the price on your job</h2>
+      <p>The ranges above are the starting point. These five factors are what move a quote up or down within (or sometimes outside) those bands.</p>
+        <ol class="numbered-list">
+          <li>Door type — sectional vs roller has different parts + motors.</li>
+          <li>Brand — B&amp;D, Merlin, Steel-Line, Centurion all carry different parts pricing.</li>
+          <li>Motor capacity — light-duty for single, heavy-duty for double (different price tier).</li>
+          <li>Wind rating — coastal / cyclone-rated areas require AS 4505-compliant panels (premium).</li>
+          <li>Insulation — foam-core panels for liveable garages cost more.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-warn">
+    <div class="section-inner">
+      <h2>Red flags &mdash; what to watch for in quotes</h2>
+      <p>We see these patterns every week from operators we'd never recommend. If a quote you've received contains one of these, ask before signing.</p>
+        <ul class="bullet-list">
+          <li>DIY torsion-spring replacement — broken springs are stored-energy bombs. Hospital trips happen.</li>
+          <li>Cash repairs with no invoice — voids manufacturer parts warranty.</li>
+          <li>Cheap aftermarket motors — fail at year 2-3 vs B&amp;D/Merlin 8-12.</li>
+          <li>Quotes that don't separate door from motor — leaves them free to swap to a cheaper combo.</li>
+          <li>'Free install' with door purchase — usually means inflated door price.</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How to get an accurate quote in 5 minutes</h2>
+      <p>Have the following ready when you call (03) 9003 0108 (or jot it on the quote form) and we can give you a real number in one call, not five.</p>
+        <ol class="numbered-list">
+          <li>Door size (rough — single, double, panel count).</li>
+          <li>Existing brand + age (look for the sticker inside).</li>
+          <li>What's broken (won't open, slow, noisy, stuck mid-way, spring obviously broken).</li>
+          <li>Single or double-storey home (affects rail/spring setup).</li>
+          <li>Any remote / app integration plans.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Can you come same-day?</strong></summary>
+          <div class="faq-a">Yes — most spring, cable, and motor repairs are same-day if you call before 12 noon. Full door installs typically 1–2 weeks lead-time for the panels.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>DIY spring replacement — really that dangerous?</strong></summary>
+          <div class="faq-a">Yes. Torsion springs are wound under 200+ lb of stored energy. Released wrong = a 2kg piece of metal through your skull. Not exaggeration. $480 callout vs $50,000 medical bills.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Brand support — what do you carry?</strong></summary>
+          <div class="faq-a">B&amp;D, Merlin, Steel-Line, Centurion, Chamberlain, ATA. We carry common springs and rollers on the truck for same-day repair.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Smart / Wi-Fi — worth it?</strong></summary>
+          <div class="faq-a">Yes if you forget to close the door regularly. App + geofence-close + Apple Home / Google Home integration. $200 upgrade on a new motor.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Coastal area — what about wind rating?</strong></summary>
+          <div class="faq-a">AS 4505-rated panels are required in cyclone zones. We use Stratco / B&amp;D wind-rated. Costs 20-30% more than standard.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Insulation — worth it?</strong></summary>
+          <div class="faq-a">Yes if the garage is liveable / connected to the house. R-value 1.5–2.5 panels cut heat loss / gain by 60%+. Adds ~$800–$1,500 to a double door install.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>What's the warranty?</strong></summary>
+          <div class="faq-a">5-year manufacturer on doors; 5-year on motors. 2-year workmanship on labour.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card cta-card-primary">
+      <div class="cta-card-body">
+        <h3>Ready for an exact quote on your Cranbourne job?</h3>
+        <p>Free written quotes. No obligation. Same-day callbacks on most enquiries.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary btn-large" href="tel:+61390030108" aria-label="Call (03) 9003 0108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost btn-large" href="/quote/">Get a quote online</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+    .lead { font-size: 1.125rem; line-height: 1.7; max-width: 70rem; margin: 0 auto; color: var(--text, #1f2937); }
+    .section-tint { background: rgba(0, 0, 0, 0.025); }
+    .section-warn { background: rgba(180, 100, 0, 0.04); }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .pricing-table thead { background: #1f2937; color: #fff; }
+    .pricing-table th { padding: 0.85rem 1rem; text-align: left; font-weight: 600; font-size: 0.95rem; }
+    .pricing-table td { padding: 0.85rem 1rem; border-top: 1px solid #e5e7eb; vertical-align: top; }
+    .pricing-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+    .pricing-table .price-range { font-weight: 600; color: #047857; white-space: nowrap; }
+    .table-foot { font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem; }
+    @media (max-width: 640px) {
+      .pricing-table thead { display: none; }
+      .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+      .pricing-table tr { border-bottom: 2px solid #e5e7eb; padding: 0.75rem 0; }
+      .pricing-table td { border: none; padding: 0.35rem 0.5rem; }
+      .pricing-table td:before { content: attr(data-label) ": "; font-weight: 600; color: #6b7280; display: inline-block; min-width: 5rem; }
+      .pricing-table td:first-child:before { display: none; }
+    }
+    .numbered-list, .bullet-list { max-width: 65rem; margin: 1rem 0; padding-left: 1.5rem; line-height: 1.7; }
+    .numbered-list li, .bullet-list li { margin: 0.65rem 0; }
+    .cta-card-section { padding: 2rem 1rem; }
+    .cta-card {
+      max-width: 56rem; margin: 0 auto;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+      padding: 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .cta-card-primary { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .cta-card-primary h3 { color: #fff; }
+    .cta-card-body { flex: 1 1 24rem; }
+    .cta-card-body h3 { margin: 0 0 0.4rem 0; font-size: 1.35rem; line-height: 1.3; }
+    .cta-card-body p { margin: 0; }
+    .cta-card-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .btn-large { padding: 0.85rem 1.5rem; font-size: 1.05rem; }
+    .faq-list { max-width: 60rem; margin: 1rem auto; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0; }
+    .faq-item[open] { background: rgba(0,0,0,0.02); }
+    .faq-q { cursor: pointer; padding: 0.4rem 0.5rem; font-size: 1.05rem; }
+    .faq-q:hover { color: #047857; }
+    .faq-a { padding: 0.65rem 0.5rem 0.85rem 0.5rem; line-height: 1.7; color: #4b5563; }
+
+  </style>
+</Layout>

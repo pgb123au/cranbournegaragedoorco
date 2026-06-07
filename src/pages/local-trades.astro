@@ -1,0 +1,219 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which trade do I book first when building a new garage in Cranbourne?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Concreter first — the slab needs to be poured, cured and the moisture barrier confirmed before any door tracks go in. Once the slab is ready, the door installer (us) can measure the actual opening (steel beam levels, jamb plumb, finished slab height) and order the door. On a new build that's usually 2–3 weeks between slab pour and our install slot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the garage door installed before or after the driveway?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually before. We install the door against the structural opening and the existing concrete garage slab. The driveway concreter then pours the driveway up to (and 10mm clear of) the garage slab edge, with a proper expansion joint so seasonal slab movement doesn't crack the driveway. If the driveway is being done at the same time, we coordinate with the concreter on the finished apron level so the bottom seal of the door touches the slab cleanly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an electrician for a smart Wi-Fi garage door opener?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if there's no power point in the garage ceiling within ~2m of where the opener will mount. Most modern Casey homes have a dedicated ceiling power point pre-wired. Older homes (Hampton Park, Endeavour Hills 1980s–1990s) sometimes need a new power point fitted — we can arrange a licensed electrician through our network ($180–$280 for a single ceiling power point near existing wiring)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I check that a garage door installer is properly insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Garage door installation doesn't legally require a builder's licence in Victoria below $10,000 — but every reputable installer carries $20M public liability insurance and complies with AS 4505. Ask for a certificate of currency before signing. We carry $20M PL through Allianz and renew annually; certificate available on request. The VBA register at vba.vic.gov.au lists registered builders for jobs over $10,000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What standards apply to garage doors in Australia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AS 4505 — Garage doors and other large access doors — is the primary safety standard. It mandates auto-reverse on obstruction, photoelectric safety sensors, manual release, pinch/finger-trap guards, and proper spring containment. AS 4505 applies to all powered residential garage doors. The 2012 amendment added the photoelectric sensor requirement; many pre-2012 doors don't have functional sensors. We test all AS 4505 requirements on every service visit."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Local Cranbourne Trades We Coordinate With | Cranbourne Garage Door Co"
+  description="The Cranbourne trades we work alongside on garage door installs — concreters, electricians, builders. Plus AS 4505 safety standard and VBA references for every homeowner."
+  canonical="https://cranbournegaragedoorco.com.au/local-trades/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Trades we work with on Cranbourne garage jobs</span>
+      <h1>Local <span class="accent">Cranbourne trades</span> we coordinate with.</h1>
+      <p class="hero-sub">
+        A garage door rarely lives in isolation. Below are the trades we coordinate
+        with on most Casey jobs &mdash; plus the regulatory and safety references
+        every homeowner should know before any door goes in.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free garage door quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">In-network trades</span>
+      <h2>The two Cranbourne trades we coordinate with most.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Concreters &mdash; slab levels and driveway aprons.</h3>
+        <p>
+          The single biggest coordination point. The finished garage-slab
+          level dictates where the bottom seal of the door touches; the
+          driveway apron must finish 10mm clear of the garage slab with a
+          proper expansion joint so seasonal Class M reactive clay movement
+          doesn&rsquo;t crack the driveway or pop the door tracks. A
+          5-minute call between us and the concreter before either pour
+          prevents most coordination issues.
+        </p>
+
+        <h3 style="margin-top:2rem;">Electricians &mdash; power points and smart-home wiring.</h3>
+        <p>
+          Most modern Casey homes have a dedicated ceiling power point
+          near where the opener mounts. Older Hampton Park, Endeavour
+          Hills and Cranbourne township garages sometimes need a new
+          ceiling power fitted. Smart-opener installs also occasionally
+          need a Cat6 run for wired ethernet (Wi-Fi-only is usually fine,
+          but workshops with thick block walls sometimes block signal).
+          We have a Casey-based electrician we book through our network
+          for these jobs &mdash; $180&ndash;$280 typical for a single new
+          ceiling power point.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f9fafb;">
+    <div class="section-inner">
+      <span class="section-eyebrow">Standards &amp; regulators</span>
+      <h2>The regulatory references for Cranbourne garage doors.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          Garage doors are deceptively heavily-regulated &mdash; AS 4505 is
+          mandatory for every powered door, and the safety requirements have
+          tightened twice since 2009. Worth bookmarking these references.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 4505 &mdash; Garage doors and other large access doors</strong>
+            &mdash; the primary Australian Standard. Mandates auto-reverse,
+            photoelectric safety sensors, manual release, pinch/finger-trap
+            guards, spring containment. Applies to all powered residential
+            garage doors.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">Standards Australia</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>City of Casey Council</strong> &mdash; building permits
+            apply if you&rsquo;re changing the structural opening (cutting a
+            larger garage door opening in a brick wall is a permit job),
+            but not for like-for-like door replacement.
+            <a href="https://www.casey.vic.gov.au/" target="_blank" rel="external noopener">casey.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Victorian Building Authority (VBA)</strong> &mdash;
+            public register of registered builders. Garage door jobs over
+            $10,000 must be performed by a registered builder. Verify
+            before booking.
+            <a href="https://www.vba.vic.gov.au/" target="_blank" rel="external noopener">vba.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Energy Safe Victoria</strong> &mdash; electrical safety
+            regulator. The opener wiring must be installed by a licensed
+            electrician if new power points or hard-wiring is involved.
+            <a href="https://esv.vic.gov.au/" target="_blank" rel="external noopener">esv.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Australian Consumer Law &mdash; Major Failure provisions</strong>
+            &mdash; if a new garage door fails within a reasonable lifetime
+            (Colorbond doors should give 20+ years), ACL provides remedies
+            independent of the manufacturer warranty. Worth knowing.
+            <a href="https://www.accc.gov.au/consumers/consumer-rights-guarantees" target="_blank" rel="external noopener">ACCC consumer rights</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>How Cranbourne trades sequence a garage door job.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Concreter first, always.</h3>
+        <p>
+          Slab pour, cure, and moisture-barrier sign-off before we can
+          measure the opening. We need the finished slab level set so the
+          door bottom-seal touches properly. On new builds that&rsquo;s
+          usually a 2&ndash;3 week gap from slab pour to our install slot.
+        </p>
+        <h3 style="margin-top:1.5rem;">Door before driveway.</h3>
+        <p>
+          We install the door against the structural opening; the driveway
+          concreter pours the apron up to (and 10mm clear of) the garage
+          slab. If we go in second we can&rsquo;t adjust the bottom seal
+          to match a non-standard apron level.
+        </p>
+        <h3 style="margin-top:1.5rem;">Do I need a building permit?</h3>
+        <p>
+          Like-for-like replacement of an existing door: no permit
+          required. Changing the size of the opening (cutting a larger
+          opening in a brick wall, for example): structural permit
+          needed via City of Casey. We can advise during the assessment
+          visit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--ink);color:#fff;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Free quote &mdash; honest Cranbourne garage door pricing.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Insulated sectional, Colorbond roller, quiet belt-drive motor or
+        emergency spring repair. AS 4505 compliant by default. All
+        coordination with concreters, electricians and surveyors handled.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner">
+      <h2>More guides &amp; articles</h2>
+      <p>Hand-picked reading from our jobs around the area.</p>
+      <ul class="guides-list">
+          <li><a href="/motor-swap-cranbourne/">Garage door motor swap-out in Cranbourne — Merlin, B&amp;D and Steel-Line compared</a></li>
+          <li><a href="/sectional-vs-roller-cranbourne/">Sectional vs roller in Cranbourne — wind rating, insulation and what it actually costs</a></li>
+          <li><a href="/smart-door-cranbourne/">Smart garage door in Cranbourne — Apple Home and Google Home, done properly</a></li>
+          <li><a href="/spring-tension-safety-cranbourne/">Garage door spring tension safety in Cranbourne — please, don&amp;rsquo;t DIY this one</a></li>
+      </ul>
+    </div>
+  </section>
+
+</Layout>

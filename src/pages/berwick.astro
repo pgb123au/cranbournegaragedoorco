@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Do you cover all of Berwick — both the new estates and the older village area?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. From the newer releases (Berwick Springs, Berwick Waters, Timbarra estate) through to the established 1970s–1990s homes around Berwick village, High Street and the Old Princes Highway corridor. Different jobs in each: newer estates are mostly builder-grade spring failures and quiet-motor upgrades; older Berwick is full door replacements on tilt and side-hung timber doors that have rusted at the bottom." }},
+    { "@type": "Question", "name": "Berwick is on a hill — does the slope affect garage door choice?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in two ways. First, sloping driveways mean the door has to clear the rise as it opens — sectional doors handle this elegantly (they lift straight up then slide horizontally) where roller doors and tilt doors don't. Second, headroom in older Berwick garages is often tight (2.1m ceilings); modern sectional doors can be installed with a low-headroom track kit needing only 100mm above the door, where the standard kit needs 300mm. We measure on the assessment visit." }},
+    { "@type": "Question", "name": "Are your Berwick prices the same as Cranbourne?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — no travel charge to Berwick. The full inner Casey ring (Cranbourne, Berwick, Narre Warren, Hampton Park, Endeavour Hills) is flat-rate. Travel uplift only applies past 25km from Cranbourne 3977, which would be the outer rural areas of Casey or into neighbouring shires (Cardinia, Mornington Peninsula)." }}
+  ]
+};
+---
+<Layout
+  title="Garage Doors Berwick | Install, Repair, Motors | (03) 9003 0108"
+  description="Garage door installation, repair and motor replacement for Berwick — Berwick Springs, Berwick Waters, Timbarra and the established Berwick village. Broken-spring same-day call-out, quiet belt-drive motors, sectional doors."
+  canonical="https://cranbournegaragedoorco.com.au/berwick/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Berwick &middot; Berwick Springs &middot; Berwick Waters &middot; Timbarra</span>
+      <h1>Garage doors in <span class="accent">Berwick</span>.</h1>
+      <p class="hero-sub">
+        Berwick is two markets in one suburb. The newer Berwick Springs / Berwick
+        Waters / Timbarra estates are modern double-storey homes with builder-grade
+        sectional doors now hitting their 8&ndash;15 year failure curve. The
+        established Berwick village around High Street has older tilt and timber
+        side-hung doors that are usually full-replacement candidates.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Berwick</span>
+      <h2>The Berwick garage door story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Sloping blocks &mdash; sectional doors are the right call.</h3>
+        <p>
+          Berwick is built on the south-facing slope below Wilson Botanic Park.
+          A lot of Berwick driveways rise 0.5&ndash;1.5m from the street to the
+          garage door, which makes sectional doors the obvious choice &mdash; they
+          lift vertically then slide back horizontally without the door arc
+          fouling on the driveway. Tilt doors and roller doors both struggle on
+          a sloping approach. On a new install we usually spec a sectional with
+          a low-headroom track kit if the garage ceiling is tight (common in
+          older Berwick).
+        </p>
+
+        <h3 style="margin-top: 2rem;">Berwick Springs / Waters / Timbarra failure curve.</h3>
+        <p>
+          The estates released 2008&ndash;2018 have predictable spring and opener
+          failures right now. We see the same pattern weekly: 10,000-cycle
+          spring breaks at year 7&ndash;10, the chain-drive opener strips its
+          drive gear shortly afterwards because it tried to lift the dead
+          weight, the customer phones us mid-school-run with a car trapped in
+          the garage. Standard same-day repair: replace both springs with
+          25,000-cycle commercial-grade, replace the gear, recalibrate the
+          opener &mdash; typically $400&ndash;$700, 90 minutes on site.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Old Berwick village &mdash; replacement territory.</h3>
+        <p>
+          The 1970s&ndash;1990s brick veneer homes around Berwick village
+          (Buchanan Park, the streets off High Street, the Old Princes Highway
+          corridor) typically still have original tilt doors or first-generation
+          sectional doors. Rust at the bottom rail is the universal symptom &mdash;
+          rainwater pools, the gal coating wears through, the bottom 100mm
+          rusts out. We replace with an insulated Colorbond sectional + quiet
+          belt-drive motor; ~$2.5K&ndash;$4.5K depending on door width.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Berwick jobs.</h3>
+        <ul>
+          <li>Same-day broken-spring repair on builder-grade double sectional ($350&ndash;$650)</li>
+          <li>Quiet belt-drive motor upgrade on Berwick Springs / Waters home ($800&ndash;$1,400 fitted)</li>
+          <li>Tilt-door to sectional-door conversion on old Berwick brick veneer ($2,800&ndash;$4,500)</li>
+          <li>Premium insulated double + smart Wi-Fi opener with battery backup ($4,200&ndash;$7,500)</li>
+          <li>Low-headroom track-kit retrofit in tight 1980s garage ($350&ndash;$500 over standard)</li>
+          <li>Bottom-panel rust replacement on 20-year-old sectional ($550&ndash;$900)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Same-day Berwick garage door call-out.</h2>
+        <p>Sloping driveways, low-headroom garages, builder-grade spring failures &mdash; we&rsquo;ve done thousands. No travel charge.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

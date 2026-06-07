@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "My garage door spring broke — is this dangerous to fix myself?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — extremely. A torsion spring holds 200–400 newton-metres of stored energy when wound. If it slips during DIY replacement it can break bones, fingers or worse. Extension springs are slightly safer but still under heavy load. Spring replacement is the single highest-risk DIY garage job — please don't. We replace springs every day, in 30–60 minutes, with proper winding bars and safety cables. Same-day call-out across the inner Casey ring." }},
+    { "@type": "Question", "name": "How do I know if a spring is broken?", "acceptedAnswer": { "@type": "Answer", "text": "Three universal signs: (1) the door is suddenly much heavier — the opener struggles, strains or fails to lift it; (2) you can hear a sharp 'bang' when the spring snaps, often at night; (3) you can see the gap in the spring above the door (torsion springs sit horizontally above the door, extension springs run along the tracks either side). If any of these are happening, stop using the door — operating it on a broken spring strips the opener gear and bends the panels." }},
+    { "@type": "Question", "name": "Can you fix a door that's come off its tracks?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is one of our most common emergency call-outs. Usually a roller has worn out and let the door drop off the track, or the door has been hit by a car backing in. The repair: lift the door, re-seat the rollers, check track alignment, replace worn rollers, test for proper travel. 60–90 minutes on site, $250–$500 if no panel damage. If a panel is bent in the process, we discuss panel replacement vs door replacement on the spot." }},
+    { "@type": "Question", "name": "Do you fix doors after the car has hit them?", "acceptedAnswer": { "@type": "Answer", "text": "All the time. Light bumper-tap damage to the bottom panel: $400–$800 for a single panel replacement plus re-alignment. Moderate damage (two panels, track bent): $900–$1,800, usually still cheaper than a new door. Heavy damage (three+ panels, twisted frame, opener crashed): replacement is the better call at $2,500–$4,500 for the whole job. We can usually quote within 20 minutes of arriving on site." }},
+    { "@type": "Question", "name": "My opener works but the door won't go all the way down — what's wrong?", "acceptedAnswer": { "@type": "Answer", "text": "Eight times out of ten it's the safety sensors. They sit 150–200mm above the slab on either side of the opening and emit an invisible infrared beam. If anything breaks the beam (cobweb, leaf, mis-aligned bracket, sun glare hitting the receiver) the door reverses or won't close. Re-alignment is a 10-minute fix, often no charge if we're on a service call anyway. The other 20%: limit-switch on the opener has drifted out — recalibration is also a 10-minute fix." }},
+    { "@type": "Question", "name": "Are repairs covered by my home warranty?", "acceptedAnswer": { "@type": "Answer", "text": "Sometimes — depends on age and what failed. New-home builder warranty typically covers the first 12 months. After that you're into manufacturer warranty (5–10 years on door panels, 5 years on premium motors, 2 years on chain-drives) if the door was correctly installed and the failure is a defect (not wear). We diagnose and write a report compatible with warranty claims if applicable; if it's wear-and-tear we quote you the repair price and you decide." }},
+    { "@type": "Question", "name": "Do you charge a call-out fee?", "acceptedAnswer": { "@type": "Answer", "text": "A standard call-out fee of $99 (Casey inner ring, Mon–Sat business hours) covers the visit, diagnosis and a written written quote. The $99 is credited back if you proceed with the repair. After-hours emergency call-out is $179. We agree pricing before any work starts — no surprises." }}
+  ]
+};
+---
+<Layout
+  title="Garage Door Repair Cranbourne | Broken Springs, Cables, Panels | (03) 9003 0108"
+  description="Garage door repair for Cranbourne and the City of Casey — broken torsion and extension springs, snapped cables, off-track doors, panel replacement, safety-sensor alignment. Same-day emergency call-out. $250–$900 typical."
+  canonical="https://cranbournegaragedoorco.com.au/services/garage-door-repair/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Same-day emergency call-out</span>
+      <h1>Garage door repair in <span class="accent">Cranbourne &amp; the City of Casey</span>.</h1>
+      <p class="hero-sub">
+        Broken springs (torsion or extension), snapped cables, bent or rusted panels,
+        door off-track, opener won&rsquo;t lift, safety sensors out of alignment.
+        Most jobs $250&ndash;$900 and completed in a single visit. Same-day call-out
+        across Cranbourne, Berwick, Narre Warren, Hampton Park and Endeavour Hills.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Send a quote request</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The most common repairs we do.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Broken spring (torsion or extension):</strong> $250&ndash;$550 supplied and fitted, same-day. We upgrade builder-grade 10,000-cycle springs to 25,000-cycle commercial-grade as a standard inclusion &mdash; the next failure is 15+ years away.</li>
+          <li><strong>Snapped cable:</strong> $200&ndash;$400. Cables fray and break around the drum. Often happens at the same time as a spring failure because the door has been operated on a broken spring.</li>
+          <li><strong>Door off-track:</strong> $250&ndash;$500. Worn rollers let the door drop, or a car has clipped the door. Re-seat, re-align, replace worn rollers. If panel damage we discuss replacement options on site.</li>
+          <li><strong>Bottom-panel rust / replacement:</strong> $550&ndash;$900 single panel. Colour-matched to existing door if still available, or a deliberate contrast strip if the colour&rsquo;s been discontinued.</li>
+          <li><strong>Bent panel (car damage):</strong> $400&ndash;$1,800 depending on how many panels and whether the track is also bent.</li>
+          <li><strong>Safety sensor re-alignment:</strong> $99&ndash;$180. Often combined with another visit and effectively free.</li>
+          <li><strong>Opener limit-switch / drive-gear / capacitor:</strong> $250&ndash;$500. Worth fixing on a sub-10-year-old opener; usually we recommend full opener replacement on anything older.</li>
+          <li><strong>Track re-alignment after slab movement:</strong> $180&ndash;$280. Class M reactive clay shifts garage slabs &mdash; tracks need re-plumbing every 5&ndash;10 years.</li>
+          <li><strong>Remote re-coding / new remotes:</strong> $80&ndash;$160 per remote. Lost remotes, lockout, after-sale.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Emergency call-out priority.</h3>
+        <p>
+          Broken-spring jobs and stuck-door jobs (car trapped inside) get
+          same-day priority across the inner Casey ring (Cranbourne, Berwick,
+          Narre Warren, Hampton Park, Endeavour Hills) Monday to Saturday if
+          you call before 2pm. After-hours emergency call-out available
+          (broken spring, stuck door, security risk after a break-in attempt)
+          at a $179 call-out vs the standard $99.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why DIY spring repair is dangerous.</h3>
+        <p>
+          Garage door torsion springs hold 200&ndash;400 newton-metres of
+          stored energy when wound. If they slip during DIY replacement they
+          break bones &mdash; commonly wrist, forearm or fingers. The cheap
+          spring kits on eBay don&rsquo;t come with the proper winding bars,
+          and the YouTube tutorials usually skip the safety cables. This is
+          one job not to attempt yourself. We replace springs every day with
+          proper tooling, in 30&ndash;60 minutes, for $250&ndash;$550 fitted
+          including the upgrade to commercial-grade.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Diagnosis: motor vs spring vs cable vs sensor.</h3>
+        <p>
+          Confusing failure modes &mdash; door won&rsquo;t open, won&rsquo;t
+          close, opens partway, makes a grinding noise. Quick triage we run
+          through on the phone:
+        </p>
+        <ul>
+          <li>Opener hums but door doesn&rsquo;t move &mdash; usually a broken spring (motor can&rsquo;t lift the dead weight) or stripped drive gear (the gear has worn down). Both common, both 1-hour fixes.</li>
+          <li>Door starts then stops &mdash; usually a limit-switch out of calibration, or the opener&rsquo;s force-sensitivity has detected a fake obstruction. 10-minute recalibration.</li>
+          <li>Door closes then reverses &mdash; almost always a safety-sensor alignment problem or something blocking the beam. 10-minute fix.</li>
+          <li>Door bangs when opening &mdash; rollers worn, or door off-track. Worth a service visit before it gets worse.</li>
+          <li>Remote doesn&rsquo;t work but wall button does &mdash; usually a flat remote battery (try replacing first, then the antenna alignment on the opener).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we repair.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Broken spring? Stuck door? Same-day call-out.</h2>
+        <p>Spring, cable, off-track, panel, sensor or opener &mdash; most jobs fixed in one visit. Honest indicative pricing on the phone.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Send a request</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,312 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a new garage door cost in Cranbourne in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Across Cranbourne and the City of Casey, a single garage door (insulated Colorbond sectional or roller) installed with a basic opener typically runs $1,800–$3,000. A double sectional door (5.0–5.4m wide) installed with a quiet belt-drive opener and two remotes runs $2,500–$5,000. Premium options — timber-look sectionals, insulated double-skin panels, smart Wi-Fi openers with battery backup — push a double install to $4,000–$8,000. Standalone motor replacement is $700–$1,600 supplied and fitted. Broken-spring repair is $250–$550 depending on torsion vs extension and how many springs need replacing." }
+    },
+    {
+      "@type": "Question",
+      "name": "My garage door spring snapped — can I open it manually?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Almost never, and you shouldn't try. A torsion spring stores enough energy to break a wrist if it lets go during a DIY repair, and once a spring is broken the door's full weight (80–180kg for a double sectional) is no longer counterbalanced. The opener will struggle, strip its drive gear, or burn out the motor trying to lift the dead weight. Don't operate the door at all — call us. Same-day emergency call-out across Cranbourne, Berwick, Narre Warren, Hampton Park and Endeavour Hills. Most spring jobs are completed in under 90 minutes on first visit." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a new garage door installation take in Cranbourne?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A straightforward swap-out of an existing door — taking the old sectional or roller off and installing a new one in the same opening — is a 3–5 hour single-trip job. A new opener install (or motor replacement) adds 1–2 hours. A complete new installation including motor, tracks, springs, remotes and Wi-Fi pairing is a single day for a single door, or 1–1.5 days for a double. We always test the door 30 times before leaving site and walk you through the safety reverse, manual release and the smart-opener app pairing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are quiet belt-drive openers worth the extra cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — and especially so in the Casey growth corridor where so many homes have a bedroom or home office directly above the garage. A chain-drive opener at 5am sounds like a small factory; a quiet belt-drive (Merlin SilentDrive, B&D Smart Phantom, Centurion Reno) is barely audible upstairs. The price difference is typically $150–$250 over a basic chain-drive, and the belt is lower-maintenance. We default to belt-drive on every new install unless the customer specifies otherwise." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my new opener work with Google Home / Alexa / Apple HomeKit?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most current B&D Smart, Merlin MyQ and Centurion smart openers work with Google Home and Alexa via the manufacturer's app and a cloud bridge. Apple HomeKit support is more limited — B&D's HomeKit-certified models work natively, others need a third-party Homebridge plugin. We install and pair the app while we're on site so the door is voice-controlled before we leave. Battery backup is included on premium smart models so the door still opens during a Casey power outage." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I repair my old garage door or replace it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Honest rule of thumb: if the repair cost is under one-third of the cost of a new door, repair. If it's over half, replace. A door under 10 years old with a single broken spring or a stripped opener gear is almost always worth repairing ($250–$900 fixes it). A door 15+ years old with rust at the bottom panel, sagging rollers, multiple bent panels, or a worn-out 1990s opener is usually past economical repair — by the time you fix three things you've spent half the cost of a new insulated Colorbond sectional that'll last 20 years. We tell you straight on the assessment call which side of the line you're on." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do garage doors and openers actually last?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard Colorbond steel sectional or roller door lasts 20–30 years if the springs are serviced every 5 years and the rollers/cables are kept clean. Springs themselves last 10,000–15,000 cycles — for a family using the door 4 times a day that's roughly 7–10 years. Openers last 12–18 years on average; chain-drives wear faster than belt-drives. The most common failure curve we see across the Casey growth corridor is original builder-grade doors hitting the 8–15 year mark, when the cheap springs go and the original opener needs replacing within a year of each other." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you stock B&D, Steel-Line, Dominator and Centurion?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — all four. B&D Doors and Steel-Line are the two most-installed brands in new Casey estates, Dominator does excellent insulated and timber-look sectionals at competitive pricing, and Centurion is the Australian-made favourite for roller doors and smart openers. We're not tied to one manufacturer, so we recommend whichever model fits the opening, the budget and the noise constraints best. Standard panel-door warranties are 5–10 years, motor warranties 5 years on premium belt-drives." }
+    }
+  ]
+};
+---
+<Layout
+  title="Cranbourne Garage Door Co | Install, Repair, Motors | (03) 9003 0108"
+  description="Garage door installation, repair and motor replacement for Cranbourne and the City of Casey. New sectional and roller doors, broken-spring emergency repairs, quiet belt-drive motors, smart Wi-Fi openers. B&D, Steel-Line, Dominator, Centurion. Same-day emergency call-out.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cranbourne &middot; Berwick &middot; Narre Warren &middot; Hampton Park &middot; Endeavour Hills</span>
+      <h1>Cranbourne&rsquo;s specialist <span class="accent">garage door</span> installers &amp; repairers.</h1>
+      <p class="hero-sub">
+        New sectional and roller doors. Broken-spring emergency repairs. Quiet
+        belt-drive motor upgrades and smart Wi-Fi openers. We work across the
+        full City of Casey &mdash; same-day emergency call-out across Cranbourne,
+        Berwick, Narre Warren, Hampton Park and Endeavour Hills.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>Same day</strong>Emergency spring &amp; opener repairs</div>
+        <div><strong>$700&ndash;$8K</strong>Motor swap to premium install range</div>
+        <div><strong>AS 4505</strong>Garage door safety compliant</div>
+        <div><strong>5&ndash;10 yr</strong>Door &amp; motor manufacturer warranty</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we do</span>
+      <h2>Five garage-door services.</h2>
+      <p class="section-lead">
+        From an emergency spring replacement before the school run, through to a
+        full new insulated sectional with a smart belt-drive motor &mdash; we do
+        the assessment, the supply and the install in one trip.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/garage-door-installation/">
+          <div class="svc-icon" aria-hidden="true">&#9728;</div>
+          <h3>Garage door installation</h3>
+          <p>New sectional, roller or tilt doors. Single $1.8K&ndash;$3K, double $2.5K&ndash;$5K, premium insulated/timber-look $4K&ndash;$8K. Includes opener, two remotes, on-site testing and app pairing.</p>
+          <span class="svc-link">See installation &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/garage-door-repair/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Garage door repair</h3>
+          <p>Broken torsion or extension springs, snapped cables, bent panels, door off-track, dodgy safety sensors. Most repairs $250&ndash;$900 completed in one visit. Same-day emergency call-out.</p>
+          <span class="svc-link">See repairs &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/motor-replacement/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Motor replacement</h3>
+          <p>Quiet belt-drive upgrades, smart Wi-Fi openers with Google Home/Alexa, battery backup for power outages. Supplied &amp; fitted from $700&ndash;$1,600. Merlin, B&amp;D Smart, Centurion.</p>
+          <span class="svc-link">See motors &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/sectional-doors/">
+          <div class="svc-icon" aria-hidden="true">&#9618;</div>
+          <h3>Sectional doors</h3>
+          <p>Insulated steel and timber-look sectional doors. Better insulation, quieter operation, more headroom than rollers. Colorbond colour-match to your roof. B&amp;D, Steel-Line, Dominator stocked.</p>
+          <span class="svc-link">See sectional doors &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/roller-doors/">
+          <div class="svc-icon" aria-hidden="true">&#9608;</div>
+          <h3>Roller doors</h3>
+          <p>Colorbond roller doors &mdash; durable, budget-friendly, simple. The classic Australian garage door. Great where ceiling clearance is tight. Centurion Australian-made, B&amp;D Smart Phantom available.</p>
+          <span class="svc-link">See roller doors &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Brand-new double garage door fully open" loading="lazy" decoding="async" />
+    <figcaption>B&amp;D, Merlin, Steel-Line — same-day on most repairs.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Casey specialist</span>
+      <h2>Three things every Casey garage-door job needs to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>Builder-grade doors are hitting the failure curve.</h3>
+          <p>
+            The City of Casey has been the fastest-growing council area in
+            Victoria for most of the last decade. That means thousands of
+            8&ndash;15 year-old homes across Cranbourne East/West/North/Park,
+            Berwick, Narre Warren and the newer Hampton Park estates &mdash; all
+            running the cheapest spring, roller and opener spec the builder
+            could fit. We see the same failures all week: cheap extension
+            springs snapping, original chain-drive openers stripping gears,
+            bottom panels rusting where they meet the slab. Most owners
+            don&rsquo;t realise a 15-cycle-a-day double-door uses up its
+            10,000-cycle springs in seven years.
+          </p>
+        </div>
+        <div>
+          <h3>Quiet motors matter when the bedroom is above the garage.</h3>
+          <p>
+            Modern Casey homes are double-storey on small blocks &mdash; the
+            master bedroom, the kids&rsquo; rooms or the home office is almost
+            always directly above the garage. A chain-drive opener at 5am
+            wakes the whole house. We default to <strong>belt-drive
+            motors</strong> (Merlin SilentDrive, B&amp;D Smart Phantom,
+            Centurion Reno) on every new install. The price difference is
+            small; the lifestyle difference is enormous. Plenty of
+            customers ring us to upgrade <em>just</em> the motor because
+            the door&rsquo;s fine but the noise is unbearable.
+          </p>
+        </div>
+        <div>
+          <h3>AS 4505 safety compliance &mdash; not optional.</h3>
+          <p>
+            AS 4505 is the Australian Standard for garage doors and motorised
+            shutters. Every powered door must have a working auto-reverse
+            (door reverses when it hits an obstruction), photoelectric safety
+            sensors at 150&ndash;200mm above the slab, and a quick-release
+            mechanism for manual operation. A surprising number of older
+            Cranbourne doors fail at least one of these &mdash; usually the
+            safety sensors have been bypassed because they kept tripping in
+            sunlight. We test all three on every service visit and replace or
+            re-align sensors at no extra charge.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we work.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        We service the full City of Casey and adjoining suburbs. Same-day
+        emergency response for broken springs and stuck doors across the inner
+        Casey ring.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">City of Casey</a>
+        <span class="area-pill area-pill-static">Cranbourne East</span>
+        <span class="area-pill area-pill-static">Cranbourne West</span>
+        <span class="area-pill area-pill-static">Cranbourne North</span>
+        <span class="area-pill area-pill-static">Cranbourne Park</span>
+        <span class="area-pill area-pill-static">Lynbrook</span>
+        <span class="area-pill area-pill-static">Lyndhurst</span>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="Garage door motor unit close-up" loading="lazy" decoding="async" />
+    <figcaption>Smart Wi-Fi motors, geofence-open, 5-year warranty.</figcaption>
+  </figure>
+
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From phone call to working door &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Phone diagnosis</h3><p>30-second triage on the phone &mdash; broken spring, opener fault, off-track, full replacement. Honest indicative pricing before we book.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Same-day visit</h3><p>For emergency repairs, we&rsquo;re on site same-day in most cases (Mon&ndash;Sat, Casey area). New installs: site measure within 48 hours.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Fixed quote</h3><p>Written fixed-price quote &mdash; door, motor, install, removal of old door, all hardware. No surprise charges.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Install / repair</h3><p>Repair: typically 60&ndash;90 minutes on site, one trip. New install: 3&ndash;5 hours single door, 1 day double. Old door removed and disposed of.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Test &amp; handover</h3><p>30-cycle test, safety-sensor calibration, auto-reverse verification, app pairing for smart openers, manual-release demo. 5&ndash;10 year warranty.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Broken spring? Stuck door? Need a new one?</h2>
+        <p>Same-day emergency call-out across the inner Casey ring. New-install quotes within 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Articles &amp; guides for Cranbourne</h2>
+      <p>Practical reading from our jobs in Cranbourne &mdash; what we charge, what to watch for, when a callout is worth it.</p>
+      <ul class="guides-list">
+          <li><a href="/motor-swap-cranbourne/">Garage door motor swap-out in Cranbourne — Merlin, B&amp;D and Steel-Line compared</a></li>
+          <li><a href="/sectional-vs-roller-cranbourne/">Sectional vs roller in Cranbourne — wind rating, insulation and what it actually costs</a></li>
+          <li><a href="/smart-door-cranbourne/">Smart garage door in Cranbourne — Apple Home and Google Home, done properly</a></li>
+          <li><a href="/spring-tension-safety-cranbourne/">Garage door spring tension safety in Cranbourne — please, don&amp;rsquo;t DIY this one</a></li>
+      </ul>
+    </div>
+  </section>
+
+</Layout>

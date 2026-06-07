@@ -1,0 +1,139 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Garage Door Quote | Cranbourne, Casey | (03) 9003 0108"
+  description="Get a free fixed quote for garage door installation, repair or motor replacement. Same-day emergency response across Cranbourne, Berwick, Narre Warren, Hampton Park and Endeavour Hills."
+  canonical="https://cranbournegaragedoorco.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free quote</span>
+      <h1>Get a fixed quote for your garage door.</h1>
+      <p class="hero-sub">
+        Tell us what&rsquo;s happening &mdash; broken spring, dead opener, want a
+        new install. We&rsquo;ll triage on the phone, give honest indicative
+        pricing, and arrange a same-day visit for emergencies or a 48-hour site
+        measure for new installs.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Cranbourne 3977, Berwick 3806, Narre Warren 3805" />
+
+            <label for="format">What do you need?</label>
+            <select id="format" name="format">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="emergency-repair">Emergency repair (broken spring, stuck door)</option>
+              <option value="motor-replacement">Motor replacement (quieter / smart / battery backup)</option>
+              <option value="new-single">New single garage door + opener</option>
+              <option value="new-double">New double garage door + opener</option>
+              <option value="sectional-door">Sectional door (insulated / timber-look)</option>
+              <option value="roller-door">Roller door (Colorbond)</option>
+              <option value="tilt-to-sectional">Convert old tilt door to sectional</option>
+              <option value="panel-replacement">Bottom-panel replacement / rust repair</option>
+              <option value="opener-only">Opener upgrade only (keep existing door)</option>
+              <option value="smart-home">Add smart-home / Wi-Fi / battery backup</option>
+            </select>
+
+            <label for="purpose">Door type currently installed (if known)</label>
+            <select id="purpose" name="purpose">
+              <option value="sectional">Sectional (horizontal panels, lifts vertically)</option>
+              <option value="roller">Roller (continuous corrugated curtain)</option>
+              <option value="tilt">Tilt (single rigid panel, swings up and out)</option>
+              <option value="side-hung">Side-hung / barn doors</option>
+              <option value="none">No existing door (new opening)</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+
+            <label for="size">Single or double garage?</label>
+            <select id="size" name="size">
+              <option value="not-sure">Not sure / other</option>
+              <option value="single">Single (2.4&ndash;3.0m wide)</option>
+              <option value="double">Double (4.8&ndash;5.4m wide)</option>
+              <option value="two-singles">Two single doors side-by-side</option>
+              <option value="triple">Triple / oversized</option>
+            </select>
+
+            <label for="bal-zone">Bedroom or living area above the garage?</label>
+            <select id="bal-zone" name="bal-zone">
+              <option value="not-sure">Not sure</option>
+              <option value="yes">Yes &mdash; quiet belt-drive motor important</option>
+              <option value="no">No &mdash; standard motor is fine</option>
+            </select>
+
+            <label for="timeframe">When do you need this done?</label>
+            <select id="timeframe" name="timeframe">
+              <option value="emergency">Emergency &mdash; today / tomorrow</option>
+              <option value="this-week">This week</option>
+              <option value="this-month">This month</option>
+              <option value="3-months">Within 3 months</option>
+              <option value="researching">Just researching</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Door brand if known, age, what's broken, any car or panel damage, budget range, preferred Colorbond colour, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Same-day phone response for emergencies. Free, no obligation.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030108">(03) 9003 0108</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;6pm &middot; after-hours emergency</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full City of Casey &mdash; Cranbourne, Berwick, Narre Warren, Hampton Park, Endeavour Hills and surrounding growth-corridor suburbs.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Phone triage with honest indicative pricing</li>
+                <li>Same-day call-out for emergencies (Mon&ndash;Sat)</li>
+                <li>Free on-site measure for new installs</li>
+                <li>Fixed-price written quote within 48 hours</li>
+                <li>5&ndash;10 year manufacturer warranty + 12-month workmanship warranty</li>
+                <li>AS 4505 safety-compliant installation</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

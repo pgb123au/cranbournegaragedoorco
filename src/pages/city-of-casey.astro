@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How fast can you get to a broken garage door in the City of Casey?", "acceptedAnswer": { "@type": "Answer", "text": "Same-day for emergency call-outs across the inner Casey ring (Cranbourne, Berwick, Narre Warren, Hampton Park, Endeavour Hills) Monday to Saturday if you call before 2pm. Most emergency jobs — broken springs, snapped cables, opener won't lift — are diagnosed within 20 minutes of arrival and fixed in the same visit. We carry 50+ spring sizes, the four major opener brands and replacement Colorbond bottom panels on the van." }},
+    { "@type": "Question", "name": "Which suburbs do you cover in the City of Casey?", "acceptedAnswer": { "@type": "Answer", "text": "All of them. Inner ring with dedicated suburb pages: Cranbourne (and Cranbourne East/West/North/Park), Berwick, Narre Warren, Hampton Park, Endeavour Hills. Outer ring covered routinely: Lynbrook, Lyndhurst, Lyndhurst, Doveton, Hallam, Hampton Park, Beaconsfield, Officer (border), Pearcedale. Acreage and rural-residential blocks in the City of Casey are fine — we just charge a small travel uplift past 25km from Cranbourne 3977." }},
+    { "@type": "Question", "name": "Do you do warranty work for B&D, Steel-Line, Dominator and Centurion?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — we're approved installers for all four major Australian garage door manufacturers. New doors and motors are covered by the manufacturer warranty (5–10 years on doors, 5 years on premium motors). We handle the warranty claim end-to-end on doors we installed — you don't need to chase the manufacturer. For doors we didn't install, we can still diagnose and repair; manufacturer warranty depends on the original installer." }},
+    { "@type": "Question", "name": "Is Casey's clay soil a problem for garage door alignment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Casey sits on reactive Class M and H clay that expands and contracts seasonally by 20–40mm. This shifts garage slabs over 5–10 years and gradually pulls the door tracks out of plumb. The most common symptom is the door binding on one side, or the seal at the bottom no longer touching the slab. Re-alignment is a 45-minute job ($180–$280) that buys another 5+ years. If the slab itself has cracked or dropped, we discuss whether re-track-alignment or slab repair is the better fix on the assessment." }}
+  ]
+};
+---
+<Layout
+  title="Garage Doors City of Casey | Full Service Area | (03) 9003 0108"
+  description="Garage door installation, repair and motor replacement across the City of Casey — Cranbourne, Berwick, Narre Warren, Hampton Park, Endeavour Hills. Same-day emergency call-out. B&D, Steel-Line, Dominator, Centurion."
+  canonical="https://cranbournegaragedoorco.com.au/city-of-casey/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">City of Casey &middot; full coverage</span>
+      <h1>Garage doors across the <span class="accent">City of Casey</span>.</h1>
+      <p class="hero-sub">
+        From Endeavour Hills in the north-west, through Hallam, Doveton, Narre Warren,
+        Berwick and Hampton Park, to Cranbourne and the southern growth corridor at
+        Cranbourne East, West, North and Park. Same-day emergency call-out across
+        the whole council area, Monday to Saturday.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Full coverage</span>
+      <h2>Suburbs we cover.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Featured suburb pages.</h3>
+        <p>Local guides &mdash; what we typically install or repair, the estate stock, garage size norms and the failure curve we see across each area.</p>
+        <div class="areas-grid" style="margin: 1.5rem 0 2.5rem 0;">
+          <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+          <a class="area-pill" href="/berwick/">Berwick</a>
+          <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+          <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+          <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        </div>
+
+        <h3>Other City of Casey suburbs we service routinely.</h3>
+        <div class="areas-grid" style="margin: 1.5rem 0 2.5rem 0;">
+          <span class="area-pill area-pill-static">Cranbourne East</span>
+          <span class="area-pill area-pill-static">Cranbourne West</span>
+          <span class="area-pill area-pill-static">Cranbourne North</span>
+          <span class="area-pill area-pill-static">Cranbourne Park</span>
+          <span class="area-pill area-pill-static">Lynbrook</span>
+          <span class="area-pill area-pill-static">Lyndhurst</span>
+          <span class="area-pill area-pill-static">Doveton</span>
+          <span class="area-pill area-pill-static">Hallam</span>
+          <span class="area-pill area-pill-static">Narre Warren South</span>
+          <span class="area-pill area-pill-static">Narre Warren North</span>
+          <span class="area-pill area-pill-static">Beaconsfield</span>
+          <span class="area-pill area-pill-static">Pearcedale</span>
+          <span class="area-pill area-pill-static">Tooradin</span>
+        </div>
+
+        <h3 style="margin-top: 2rem;">Two markets, two service conversations.</h3>
+        <p>
+          <strong>The new-estate market</strong> (Cranbourne East / West / North /
+          Park, newer Berwick and Narre Warren South releases, Lynbrook, Lyndhurst):
+          builder-grade doors hitting the 8&ndash;15 year failure curve. Cheap
+          extension springs, original chain-drive openers, no battery backup, no
+          smart-home integration. The conversation is usually <em>"my door died this
+          morning &mdash; repair or replace?"</em> and the right answer is often
+          a fresh insulated sectional with a quiet belt-drive motor.
+        </p>
+        <p>
+          <strong>The established-suburb market</strong> (Endeavour Hills, Hampton
+          Park established blocks, older Berwick, Cranbourne township proper):
+          15&ndash;30 year-old tilt doors, sectional doors with worn-out 1990s
+          openers, side-hung timber doors that have rusted at the bottom. Bigger
+          conversations &mdash; sometimes a full replacement, sometimes a clever
+          repair that buys another 5&ndash;10 years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical price brackets.</h3>
+        <ul>
+          <li><strong>Broken spring repair:</strong> $250&ndash;$550 same-day on site.</li>
+          <li><strong>Motor replacement (quiet belt-drive):</strong> $700&ndash;$1,600 supplied and fitted.</li>
+          <li><strong>New single door + opener installed:</strong> $1,800&ndash;$3,000.</li>
+          <li><strong>New double sectional + smart opener:</strong> $2,500&ndash;$5,000.</li>
+          <li><strong>Premium insulated / timber-look:</strong> $4,000&ndash;$8,000.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">All five services</span>
+      <h2>What we do.</h2>
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/garage-door-installation/"><h3>Garage door installation</h3><p>$1.8K&ndash;$8K. Sectional, roller, tilt. Single or double. B&amp;D, Steel-Line, Dominator, Centurion.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/garage-door-repair/"><h3>Garage door repair</h3><p>$250&ndash;$900. Broken springs, snapped cables, off-track doors, panel replacement. Same-day.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/motor-replacement/"><h3>Motor replacement</h3><p>$700&ndash;$1.6K. Quiet belt-drive, smart Wi-Fi openers, battery backup. Merlin, B&amp;D Smart, Centurion.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/sectional-doors/"><h3>Sectional doors</h3><p>Insulated steel or timber-look sectionals. Better insulation, quieter, more headroom than rollers.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/roller-doors/"><h3>Roller doors</h3><p>Colorbond rollers &mdash; durable, budget-friendly, simple. Best where ceiling clearance is tight.</p><span class="svc-link">See &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Same-day garage door call-out anywhere in the City of Casey.</h2>
+        <p>Broken spring? Stuck door? Quoting a new install? One phone call.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

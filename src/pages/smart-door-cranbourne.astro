@@ -1,0 +1,203 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Which smart-home platforms can my garage door work with in 2026?", "acceptedAnswer": { "@type": "Answer", "text": "On a current-model Merlin (MyQ-equipped) you get Apple Home, Google Home, Amazon Alexa, IFTTT, Samsung SmartThings, and Tesla in-car integration. On a current-model B&D (Tilt-A-Door / Smart Phone Control) you get Apple Home, Google Home and Alexa. On Steel-Line you get Google Home and Alexa, with Apple Home rolling out through 2026. Older motors (pre-2020) usually need a third-party retrofit module — Aqara G3, Meross MSG200, or Tailwind iQ3 — to bridge into HomeKit or Google. The retrofit route works, but it adds a cloud-dependency we'd rather avoid on a security-critical device." }},
+    { "@type": "Question", "name": "Can I retrofit smart control to my existing motor or do I need to swap?", "acceptedAnswer": { "@type": "Answer", "text": "Retrofit is genuinely possible on most motors made after 2010. The Meross MSG200 ($110–$140) wires into the existing wall-button terminals and gives you Apple Home, Google and Alexa with door-position sensing. The Tailwind iQ3 ($180) is the premium option with a higher build quality and a longer warranty. The Aqara G3 is an integrated camera-plus-controller. Retrofit limitations: no native rolling-code remote pairing through the smart-home (the retrofit acts as a wired button-press, not as a remote), and you're adding a cloud dependency the motor manufacturer didn't engineer for. For motors made before 2010 — sectional or roller — we usually recommend the full motor swap to a current-model unit with native smart-home built in." }},
+    { "@type": "Question", "name": "Is the geofence-open feature safe? Doesn't that mean the door opens whenever my phone arrives home?", "acceptedAnswer": { "@type": "Answer", "text": "Geofence auto-open is offered by every smart-garage platform, and we recommend turning it off on most installs. The feature works by triggering the door when your phone's GPS crosses a geofence around the property — but GPS drift on cloudy days, phone in a pocket near the front of the car, or app freshness can produce false triggers. A more useful pattern: combine a 'door open' notification with a manual auto-close on a 10-minute timer (door closes 10 minutes after the last open event if no one has closed it manually). This catches the genuinely useful case — kids leaving the door up — without the security exposure of unrequested opens. We configure these notification and timer policies during the install at no extra charge." }},
+    { "@type": "Question", "name": "Does adding smart-home control affect my motor warranty?", "acceptedAnswer": { "@type": "Answer", "text": "On native smart-home features (MyQ on Merlin, Tilt-A-Door on B&D, the Steel-Line app), no — these are built-in features and the full motor warranty applies. On third-party retrofit modules (Meross, Tailwind, Aqara), the motor manufacturer's warranty isn't voided as long as the retrofit doesn't damage the wiring, but the retrofit module carries its own separate warranty (typically 12 months) and warranty support for the integration itself sits with the retrofit vendor, not the motor manufacturer. We document which path is being used on the install paperwork so future warranty calls go to the right place." }},
+    { "@type": "Question", "name": "What about the security risk of cloud-controlled garage doors?", "acceptedAnswer": { "@type": "Answer", "text": "Real but manageable. The risk profile is: account compromise (someone gets your iCloud or Google password) and the cloud-API exposure on the manufacturer's side. Mitigations we recommend on every smart install: (1) two-factor authentication on the smart-home account, no exceptions; (2) a separate Apple Home or Google account for shared family devices, not your primary work account; (3) disable the 'open from outside the home network' feature unless you specifically need remote operation; (4) review your shared-access list quarterly. Local-only options (HomeKit without iCloud Remote Access, Home Assistant on a Pi) are available for security-conscious users — happy to discuss what that looks like at quote time." }}
+  ]
+};
+---
+<Layout
+  title="Smart Garage Door in Cranbourne — Apple Home and Google Integration | (03) 9003 0108"
+  description="The 2026 retrofit options for making a Cranbourne garage door HomeKit and Google Home compatible, the security trade-off, the geofence-open feature, and the warranty implications."
+  canonical="https://cranbournegaragedoorco.com.au/smart-door-cranbourne/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Smart-home integration &middot; Cranbourne &amp; City of Casey</span>
+      <h1>Smart garage door in <span class="accent">Cranbourne</span> &mdash; Apple Home and Google Home, done properly.</h1>
+      <p class="hero-sub">
+        Two paths: native pairing on a current-model Merlin or B&amp;D motor
+        ($0 on a new install, included), or a retrofit module on your
+        existing motor ($110&ndash;$180 supplied and fitted). We&rsquo;ll talk
+        you through the security trade-offs, the geofence-open question, and
+        which path makes sense for your house &mdash; without the hard sell.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Send a quote request</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What "smart garage door" actually means in 2026.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The phrase covers four genuinely different features, and which ones
+          you care about should drive the platform decision &mdash; not the
+          other way around. We see a lot of Cranbourne homeowners buy into a
+          smart-home ecosystem first and then try to make the garage fit; the
+          decision is usually cleaner the other way around.
+        </p>
+        <p>
+          The four features: (1) <strong>open and close from your phone</strong>
+          when you&rsquo;re out (school pickup forgot to close the door,
+          tradie needs to access the garage, courier delivery). (2)
+          <strong>status notifications</strong> &mdash; alert when the door
+          opens or closes, alert when it&rsquo;s been left open for more than
+          X minutes. (3) <strong>automations</strong> &mdash; auto-close at
+          11pm if still open, auto-light when door opens after dark, trigger
+          security camera recording on door open. (4) <strong>voice
+          control</strong> via Siri, Google Assistant or Alexa.
+        </p>
+        <p>
+          Of these, the status notifications and the auto-close timer deliver
+          the most genuine value to most households. Open-from-phone is used
+          less often than people expect once the novelty wears off. Voice
+          control sounds great in the showroom but is frequently turned off
+          after a few weeks &mdash; you&rsquo;re rarely in voice range of a
+          speaker while also wanting to open the garage door. Geofence
+          auto-open is the feature we most often disable post-install for
+          security reasons.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The two paths: native vs retrofit.</h2>
+      <div style="max-width: 65rem;">
+        <h3>Path 1 &mdash; Native pairing on a current motor.</h3>
+        <p>
+          If you&rsquo;re replacing a motor anyway (yours is over 12 years old,
+          or failing), the right move is to choose a current-model unit with
+          native smart-home built in. Merlin MT5580EVO and ProSeries: MyQ,
+          which bridges to Apple Home, Google Home, Alexa and IFTTT. B&amp;D
+          Controll-A-Door Smart Phone: Apple Home, Google Home, Alexa. Steel-Line
+          VertiBelt with the Smart Home Hub: Google Home and Alexa today,
+          Apple Home rolling out through 2026. On a new install, smart-home
+          commissioning is included at no extra charge &mdash; we pair the
+          unit to your hub during the visit and confirm everything works
+          before we leave.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Path 2 &mdash; Retrofit module on an existing motor.</h3>
+        <p>
+          If your motor is reasonably current (post-2010) and otherwise
+          working fine, a retrofit module gives you most of the same benefits
+          without the swap cost. We fit three brands across Cranbourne:
+        </p>
+        <ul>
+          <li><strong>Meross MSG200</strong> &mdash; $110&ndash;$140 supplied and fitted. Apple Home, Google, Alexa, IFTTT. Wires into the existing wall-button terminals plus a magnetic door-position sensor. Best budget option.</li>
+          <li><strong>Tailwind iQ3</strong> &mdash; $180&ndash;$220 fitted. Premium build, longer warranty, multi-door capable (handy if you have a separate workshop door). Same platform coverage as Meross.</li>
+          <li><strong>Aqara G3 Smart Hub Camera</strong> &mdash; $250&ndash;$320 fitted as a combined-product. Integrated camera, doorbell-style notifications, plus the door control. Best for Apple Home households who want one device doing two jobs.</li>
+        </ul>
+        <p style="margin-top: 1.5rem;">
+          All three rely on your home Wi-Fi reaching the garage with a
+          reliable signal &mdash; a check we do during the quote. Detached
+          garages in older Cranbourne CBD and Hampton Park homes sometimes
+          need a Wi-Fi mesh node before the smart module will sit reliably
+          online.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The security conversation we have with every smart-door customer.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Adding internet-connected control to the largest opening in your
+          house changes the security model. Not catastrophically &mdash; the
+          actual attack surface is much narrower than the worst-case rhetoric
+          suggests &mdash; but it&rsquo;s worth a deliberate conversation
+          before commissioning rather than after.
+        </p>
+        <ul>
+          <li><strong>Two-factor authentication is non-negotiable</strong> on the smart-home account that controls the garage. Apple ID, Google account, B&amp;D Tilt-A-Door account, MyQ account &mdash; whichever applies. We won&rsquo;t commission a smart install without 2FA enabled.</li>
+          <li><strong>Disable geofence auto-open</strong> on the default setup. The feature is convenient until the day your phone&rsquo;s GPS drifts and opens the door while you&rsquo;re at the petrol station. Auto-close on a timer delivers most of the convenience without the risk.</li>
+          <li><strong>Use a family-shared account, not your work account</strong> for the garage. If your work email gets compromised, the garage shouldn&rsquo;t be on the same login.</li>
+          <li><strong>Audit shared access quarterly.</strong> Ex-partner, former housemate, contractor with temporary access &mdash; smart-home shared access tends to accumulate and stays accumulated. A 5-minute review every three months catches the drift.</li>
+          <li><strong>Local-only is an option</strong> for the security-conscious. Apple Home without iCloud Remote Access, or Home Assistant running on a Raspberry Pi in your network, gives you the automation benefits without any cloud exposure. We&rsquo;re happy to set this up &mdash; the install runs an hour longer and there&rsquo;s no cost difference on parts.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Common questions on smart garage doors in Cranbourne.</h2>
+      <div style="max-width: 65rem;">
+        <h3>Will my smart door work if the NBN drops out?</h3>
+        <p>
+          Local actions still work &mdash; the wall button, the remote, and
+          (on most platforms) Apple Home actions from a device on the same
+          local Wi-Fi. What stops working during an outage: remote-from-phone
+          when you&rsquo;re away from the house, voice control through cloud
+          assistants, and most automations triggered by external events.
+          We&rsquo;ll always leave a working physical remote and keypad,
+          regardless of the smart-home setup.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Can I let a tradie or courier in remotely?</h3>
+        <p>
+          Yes &mdash; MyQ, Tilt-A-Door, Apple Home and Google Home all support
+          time-limited shared access. Common pattern in Cranbourne: a
+          one-hour access window for a delivery, or a four-hour window for a
+          tradie. We walk you through setting these up during the install
+          handover.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Does Apple Home need an Apple TV or HomePod to work?</h3>
+        <p>
+          You need a HomePod, HomePod Mini, Apple TV or iPad as a "Home Hub"
+          for remote-from-phone control to work outside your home network.
+          Inside the home, an iPhone alone is enough. We&rsquo;ll check what
+          you have during the quote and recommend if you need to add a hub.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">My motor is over 15 years old &mdash; can it still be made smart?</h3>
+        <p>
+          Technically often yes (the wall-button terminals are universal), but
+          we usually recommend against it. A 15-year-old motor is in
+          end-of-life territory for the drive train and the limit-switch
+          electronics &mdash; you&rsquo;d be wiring smart control to a unit
+          that needs replacement anyway. The cleaner path is a motor swap to
+          a current-generation unit with native smart-home, which lands at
+          $850&ndash;$1,150 fitted including the smart-home pairing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Smart-home garage, configured properly the first time.</h2>
+      <p style="max-width: 50rem; margin: 1rem auto;">
+        Native pairing on a new motor, or a retrofit module on your existing
+        one &mdash; we&rsquo;ll quote both paths so you can choose. Apple
+        Home, Google Home, Alexa or local-only, 2FA enabled by default,
+        geofence disabled by default, auto-close timer configured. Same-week
+        install across Cranbourne, Hampton Park, Junction Village, Botanic
+        Ridge, Clyde and Clyde North.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Send a quote request</a>
+      </div>
+    </div>
+  </section>
+</Layout>

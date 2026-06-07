@@ -1,0 +1,191 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the AS 4505 wind class for a Cranbourne garage door?", "acceptedAnswer": { "@type": "Answer", "text": "Most of Cranbourne, Hampton Park, Junction Village and Clyde fall into AS 4505 wind class N2 (33 m/s peak gust) on standard residential blocks. The newer estates on the southern fringe — Botanic Ridge, Clyde North, the more exposed parts of Cranbourne South near the Western Port wetlands — can push to N3 (41 m/s) where the block sits on open ground without windbreak. We size to the actual classification from your engineer's wind report (or the project-builder spec if it's a new build) rather than defaulting to a single number. N2-rated doors are stocked; N3 is a 7–10 day lead time on the heavier-gauge panel." }},
+    { "@type": "Question", "name": "Why is sectional usually better than roller on a wind-rated block?", "acceptedAnswer": { "@type": "Answer", "text": "Two reasons. First, sectional panels are 40mm-thick polyurethane-filled with steel inner and outer skins — that's structurally far more rigid than a 0.4mm or 0.5mm roller-door curtain. Second, sectional doors are guided in vertical tracks bolted to the structural frame on both sides, where roller curtains are only held in narrow side-guides. On a high-wind block, a roller curtain can bow inward or escape the guides during a peak gust, where a sectional door stays where it is. For N3-classified Cranbourne blocks we will rarely quote a roller as the primary choice." }},
+    { "@type": "Question", "name": "Insulation R-value difference between sectional and roller — does it matter on a garage?", "acceptedAnswer": { "@type": "Answer", "text": "It matters more than you'd think, particularly on a Cranbourne garage that's also a workshop, gym or a kid's hangout. A polyurethane-filled sectional panel comes in at roughly R 2.0 (3.0 on premium variants), where an un-insulated roller curtain is essentially R 0.3. The temperature delta on a 35°C January afternoon is 6–9 degrees cooler inside a sectional-doored garage than a roller-doored one. If the garage adjoins habitable rooms (which is the layout on most Clyde North and Cranbourne East estate homes), the sectional R-value also pulls down the cooling load on the adjacent rooms." }},
+    { "@type": "Question", "name": "Cost-per-square-metre — what's the 2026 gap?", "acceptedAnswer": { "@type": "Answer", "text": "Roller doors land at $850–$1,400 supplied and fitted on a single-car opening, $1,400–$2,200 on a double. Sectional doors land at $1,650–$2,800 single-car and $2,400–$4,200 double. The cost-per-square-metre averages out to roughly $180/m² on a roller and $310/m² on a sectional. The gap closes once you add motor, insulation and wind-rated upgrades — and over a 20-year window, the sectional's longer panel life (25+ years vs 12–18 for a roller curtain) usually pulls the total cost-of-ownership level or in the sectional's favour." }},
+    { "@type": "Question", "name": "What about access height — can I fit a 4WD or a trailer through both?", "acceptedAnswer": { "@type": "Answer", "text": "Roller doors give you slightly more headroom on the same opening — typically 80–120mm more, because the curtain rolls up into a much smaller box at the top than the sectional's overhead-tracking rail needs. For a 2.4m-high standard opening, a roller will give you 2.32m of clear drive-through, where a sectional gives 2.20m. On most Cranbourne double-garages that's still plenty for any standard 4WD or boat-on-trailer. The exception is tall caravans or commercial vans, where a roller can be the deciding factor and we may also recommend upgrading the opening height itself rather than fighting the door type." }}
+  ]
+};
+---
+<Layout
+  title="Sectional vs Roller Garage Doors in Cranbourne — Wind Rating, Insulation and Cost | (03) 9003 0108"
+  description="Why sectional doors hold up better in higher wind-classified zones around Cranbourne, the AS 4505 wind classification, the panel-thickness difference, the insulation R-value, and the cost-per-square-metre."
+  canonical="https://cranbournegaragedoorco.com.au/sectional-vs-roller-cranbourne/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Door type comparison &middot; Cranbourne &amp; City of Casey</span>
+      <h1>Sectional vs roller in <span class="accent">Cranbourne</span> &mdash; wind rating, insulation and what it actually costs.</h1>
+      <p class="hero-sub">
+        Cranbourne and the southern Casey suburbs sit mostly in AS 4505 wind
+        class N2 with patches of N3 across the more exposed Botanic Ridge,
+        Clyde North and Cranbourne South blocks. That changes the
+        sectional-vs-roller maths in a way the showroom brochures don&rsquo;t
+        explain. Free quote with the wind class confirmed against your block.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Send a quote request</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>AS 4505 and what the wind class means for your door.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          AS 4505 is the Australian Standard that classifies garage doors by
+          the wind load they must resist without permanently deflecting,
+          escaping the guides, or letting daylight through the panel joins.
+          The classes run N1 (sheltered, 28 m/s peak gust) through N6
+          (extreme, 70 m/s &mdash; cyclone territory). For Cranbourne and the
+          surrounding City of Casey suburbs, the practical band is N2 to N3.
+        </p>
+        <p>
+          N2 covers most of Cranbourne CBD, Cranbourne East, Cranbourne West,
+          Hampton Park, Junction Village and the older Cranbourne North
+          estates &mdash; established streets with mature trees, fence-line
+          windbreak, and adjacent house frontage breaking the peak gust load.
+          N3 applies on the exposed-paddock blocks on the southern and
+          western edges &mdash; particularly newer Botanic Ridge, Clyde North,
+          Clyde and the parts of Cranbourne South where the prevailing
+          south-westerly off the bay has unbroken fetch onto the block.
+        </p>
+        <p>
+          On an N3 block, a roller curtain with standard 0.4mm steel and
+          builder-grade side-guides will bow inward during a peak gust. We
+          have seen it &mdash; the curtain pushes into the garage cavity by
+          50&ndash;100mm at the centre, occasionally escaping the guide.
+          That&rsquo;s not a hypothetical risk; that&rsquo;s a callout we get
+          three or four times a year after a serious southerly through the
+          Casey corridor.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The panel thickness story.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          A sectional door panel is a sandwich. Steel skin (typically 0.5mm)
+          on the outside, polyurethane foam in the middle (35&ndash;45mm
+          thick), and another steel skin on the inside. Total panel thickness
+          is around 40mm, with internal stiffeners on the wider double-car
+          panels. Structurally, this acts like a stressed-skin honeycomb panel
+          &mdash; far more rigid than the steel thickness alone would suggest.
+        </p>
+        <p>
+          A roller-door curtain is a single skin of corrugated steel, typically
+          0.4mm or 0.5mm, with no insulation and no inner skin. The corrugation
+          provides some bending rigidity along the curtain's length, but
+          essentially none across its width. On a 5m-wide double-car opening
+          that&rsquo;s a long unsupported span when wind loads on it. Solid
+          curtain rollers (Steel-Line Smartline, B&amp;D Firmadoor, ATA Premier)
+          exist and are wind-rated up to N3 with the heavier 0.6mm gauge plus
+          reinforced guides &mdash; we&rsquo;re happy to quote that
+          configuration where the access-height advantage of a roller really
+          matters.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The cost picture across a 20-year horizon.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Roller, single-car:</strong> $850&ndash;$1,400 fitted. Curtain life 12&ndash;18 years. Insulation R 0.3. Repaint or replace at year 12&ndash;15.</li>
+          <li><strong>Roller, double-car:</strong> $1,400&ndash;$2,200 fitted. Same curtain life as single-car. Heavier curtain means earlier guide wear on N3 blocks.</li>
+          <li><strong>Sectional, single-car standard:</strong> $1,650&ndash;$2,300 fitted. Panel life 25+ years. Insulation R 2.0. Re-paint not needed &mdash; the Colorbond finish is the topcoat.</li>
+          <li><strong>Sectional, single-car premium:</strong> $2,300&ndash;$2,800 fitted. R 3.0 insulation, heavier 0.6mm skin, full N3 wind compliance, designer-finish options.</li>
+          <li><strong>Sectional, double-car standard:</strong> $2,400&ndash;$3,200 fitted. Same panel and motor lifecycle as single-car.</li>
+          <li><strong>Sectional, double-car premium:</strong> $3,200&ndash;$4,200 fitted. Full N3 rating, R 3.0, Colorbond Matt or woodgrain-finish panel options.</li>
+        </ul>
+        <p style="margin-top: 1.5rem;">
+          The sectional door's longer panel life and built-in insulation
+          usually level the total-cost-of-ownership over 20 years, even
+          before you factor in the cooling-load benefit on the adjoining
+          rooms. On an N3 block specifically &mdash; new Clyde North or
+          Botanic Ridge build &mdash; we&rsquo;d only ever recommend a roller
+          if access-height clearance is the deciding constraint.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Common questions on sectional vs roller in Cranbourne.</h2>
+      <div style="max-width: 65rem;">
+        <h3>Can a sectional door be retrofitted into an opening built for a roller?</h3>
+        <p>
+          Yes, in 90% of cases. The opening height usually accommodates the
+          sectional&rsquo;s overhead-tracking rail (you lose 80&ndash;120mm of
+          headroom compared to a roller). The width is universal. We&rsquo;ll
+          measure the lintel-to-ceiling clearance and the side-room clearance
+          for the vertical tracks before quoting; if a low-headroom kit is
+          needed it adds about $250 to the install.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Are sectional doors louder to operate than roller doors?</h3>
+        <p>
+          Slightly &mdash; the panels articulating around the curve at the top
+          of the track produce a measurable sound the roller curtain doesn't.
+          But on a belt-drive motor with quality nylon rollers, the difference
+          is around 3&ndash;5 dB &mdash; not enough to matter in practice.
+          What does matter is the motor itself: a chain-drive on either door
+          type is noticeably louder than a belt-drive on either door type.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">What about salt-air corrosion &mdash; we're not far from Westernport?</h3>
+        <p>
+          The southern parts of Cranbourne and Cranbourne South are within the
+          15km salt-aerosol zone from Westernport Bay. We default to
+          Colorbond Coastline-grade finishes (not standard Colorbond) on doors
+          in this zone, with stainless-steel hardware on the spring fixings
+          and roller pivots. Adds roughly 5% to the door price, doubles the
+          surface-finish warranty.
+        </p>
+
+        <h3 style="margin-top: 1.5rem;">Does the AS 4505 wind class affect my insurance?</h3>
+        <p>
+          It can &mdash; some insurers want documentation that the door is
+          rated to the wind class on the site engineer's report, particularly
+          on newer Clyde North and Botanic Ridge contracts. We supply the
+          AS 4505 compliance certificate as part of the handover paperwork on
+          every new-door install. Existing-door customers wanting documentation
+          can request a retrofit compliance inspection at $180.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Wind class checked, quote in writing, no upsell.</h2>
+      <p style="max-width: 50rem; margin: 1rem auto;">
+        We&rsquo;ll confirm your AS 4505 wind class against your block
+        (engineer's report on a new build, or our own assessment on an
+        existing home) and quote both sectional and roller options where both
+        are viable. Honest comparison, not a single-product pitch.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Request a wind-class quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>

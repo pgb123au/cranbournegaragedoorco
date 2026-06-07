@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Are Endeavour Hills homes mostly old garage doors?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Endeavour Hills was mainly built out from the mid-1980s to the late-1990s, so the typical Endeavour Hills home has a 25–35 year-old garage door. About 60% are sectional doors on their second or third opener, 25% are old tilt doors, and 15% are roller doors or side-hung timber. Most jobs here are either full replacement or a major repair (door, opener and springs all at once) — patch-fixes don't make sense on a door that old." }},
+    { "@type": "Question", "name": "How much does a complete new garage door + motor cost in Endeavour Hills?", "acceptedAnswer": { "@type": "Answer", "text": "For a single garage with a new insulated Colorbond sectional + quiet belt-drive opener + two remotes + smart Wi-Fi pairing + removal of the old door, expect $2,200–$3,500 supplied and installed in a day. Double garage same spec is $3,000–$5,200. Going premium (insulated double-skin panel, smart opener with battery backup, HomeKit support, timber-look finish) pushes a double to $5,500–$8,000." }},
+    { "@type": "Question", "name": "My 1990s opener has died — is it worth fixing or do I replace?", "acceptedAnswer": { "@type": "Answer", "text": "Replace. Parts for the 1990s screw-drive and chain-drive units are usually obsolete, and even where parts exist a repair costs $350–$500 on a motor that's already 25+ years old. For $700–$1,400 you get a brand-new quiet belt-drive opener with smart-home support, two new remotes, a 5-year warranty and battery backup. The decision is obvious once the numbers are on paper." }}
+  ]
+};
+---
+<Layout
+  title="Garage Doors Endeavour Hills | Install & Repair | (03) 9003 0108"
+  description="Garage door installation, repair and motor replacement for Endeavour Hills — established 1980s–1990s Casey suburb. Tilt-to-sectional conversions, 1990s opener replacements, quiet belt-drive upgrades, new Colorbond doors."
+  canonical="https://cranbournegaragedoorco.com.au/endeavour-hills/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Endeavour Hills &middot; established Casey</span>
+      <h1>Garage doors in <span class="accent">Endeavour Hills</span>.</h1>
+      <p class="hero-sub">
+        Endeavour Hills was mostly built out 1985&ndash;1998, so the typical
+        garage door here is 25&ndash;35 years old &mdash; second or third opener,
+        original springs replaced once or twice, panels showing rust at the
+        bottom. Most jobs in this suburb are full replacements or major rebuilds
+        rather than spot repairs.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Endeavour Hills</span>
+      <h2>The Endeavour Hills garage door story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>The 30-year door replacement wave.</h3>
+        <p>
+          Endeavour Hills homes built in the late 1980s and early 1990s had
+          their original garage doors fitted around then. A well-maintained
+          Colorbond sectional lasts 20&ndash;30 years; we&rsquo;re at the
+          back end of that bell curve. Symptoms we see all the time: rust at
+          the bottom panel, rollers worn down to plastic stubs, hinges
+          loose, original screw-drive opener on its last legs. Spending
+          $400&ndash;$700 to fix one issue on a 30-year-old door rarely
+          makes sense when $2.5K&ndash;$4K replaces everything for the next 25 years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">1990s opener replacement is the most common job.</h3>
+        <p>
+          A huge chunk of Endeavour Hills garages still run the original 1990s
+          opener &mdash; loud, slow, no smart-home support, no battery backup,
+          parts obsolete. The single most common service call here is a
+          quiet belt-drive opener replacement keeping the existing door
+          (if the door is still sound). $700&ndash;$1,400 supplied and fitted,
+          90 minutes on site, smart-home paired before we leave. Transforms
+          how the whole house feels.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Tilt-door replacement.</h3>
+        <p>
+          About a quarter of Endeavour Hills homes still have original tilt
+          doors (single panel swinging up and out). They&rsquo;re loud, badly
+          insulated, swing out into the driveway, and the cantilever springs
+          are dangerous to service. We replace with insulated sectionals on
+          new tracks &mdash; full single-day job, $2,500&ndash;$4,000 for a
+          single garage.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Older garages, tight headroom.</h3>
+        <p>
+          Endeavour Hills garages from this era often have 2.1m or 2.2m
+          ceiling heights &mdash; tight for modern sectional-door tracks
+          (which want 300mm). We use a low-headroom kit (100mm needed)
+          where the ceiling is tight; adds $350&ndash;$500 to the install
+          but means you don&rsquo;t need to lift the ceiling.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Endeavour Hills jobs.</h3>
+        <ul>
+          <li>Quiet belt-drive opener swap on 1995-vintage sectional ($700&ndash;$1,400 fitted)</li>
+          <li>Tilt-door to sectional conversion ($2,500&ndash;$4,000 single)</li>
+          <li>Full replacement: door + motor + tracks + springs ($2,500&ndash;$5,500)</li>
+          <li>Bottom-panel rust replacement on 25-year-old sectional ($550&ndash;$900)</li>
+          <li>Low-headroom track-kit retrofit in tight 1990s garage ($350&ndash;$500 over standard)</li>
+          <li>Smart-home retrofit (Google Home / Alexa / HomeKit) on existing opener ($300&ndash;$600)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Same-day Endeavour Hills garage door call-out.</h2>
+        <p>1990s opener replacements, tilt-to-sectional conversions, full door replacements &mdash; the bread-and-butter of this suburb.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

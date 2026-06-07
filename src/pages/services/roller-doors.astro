@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How much does a new roller door cost installed in Cranbourne?", "acceptedAnswer": { "@type": "Answer", "text": "A standard Colorbond roller door installed with a basic opener is $1,500–$2,400 for a single garage (2.4m wide), $2,200–$3,200 for a double (4.8m wide). Insulated roller doors (foam-filled curtain) add ~$300–$500. Centurion Reno smart opener adds $200–$300 over a basic opener. Includes two remotes, on-site testing, removal of the old door, manufacturer warranty paperwork." }},
+    { "@type": "Question", "name": "Are roller doors quieter than sectional doors?", "acceptedAnswer": { "@type": "Answer", "text": "Slightly slower and slightly louder than belt-drive sectional doors, but well within acceptable for most homes. Modern roller doors run quietly with proper rollers and nylon end-caps; the bigger noise factor is the opener motor itself. Pair a roller door with a quiet belt-drive opener (Centurion Reno is the favourite for rollers) and the result is acceptable for bedroom-above-garage layouts — though still slightly louder than an insulated sectional with the same opener." }},
+    { "@type": "Question", "name": "When is a roller door the right choice over sectional?", "acceptedAnswer": { "@type": "Answer", "text": "Three scenarios: (1) ceiling height is tight — roller doors only need the drum height (~250mm) at the top of the opening, where standard sectional needs 300mm headroom plus the full panel length of ceiling track. (2) Budget is tight — roller doors are $500–$1,000 cheaper than equivalent sectional. (3) The look you want is the classic Australian corrugated-steel garage door — sectional doors have horizontal panels, rollers have continuous vertical corrugation." }},
+    { "@type": "Question", "name": "How long do roller doors last?", "acceptedAnswer": { "@type": "Answer", "text": "20–25 years for the curtain itself if it's Colorbond and not damaged. The drum, springs and rollers usually need replacement at 15–20 years. The opener at 12–18 years. Most failures we see in Cranbourne are: (1) drum spring weakening (door becomes hard to lift manually), (2) curtain rusting at the bottom rail where it touches the slab, (3) opener failure on the original chain-drive. Each fixable individually $250–$800; full replacement when 2+ failures co-occur." }},
+    { "@type": "Question", "name": "Do roller doors come insulated?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — foam-filled insulated roller doors are available from Centurion and B&D. The corrugated curtain has a polyurethane foam backing that adds R-1.5 to R-2.0 of insulation. Not as well-insulated as a double-skin sectional (R-2.5 to R-4.0), but a major improvement over single-skin steel. Worth the $300–$500 upgrade if the garage is attached to a heated room." }},
+    { "@type": "Question", "name": "Can you fit a smart Wi-Fi opener to a roller door?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Centurion Reno is the most popular smart opener for roller doors in Casey. Wi-Fi, smartphone app, Google Home and Alexa compatibility, optional battery backup. Pairs to the existing or new roller door. We install Reno on all our roller jobs by default unless the customer specifies otherwise." }}
+  ]
+};
+---
+<Layout
+  title="Roller Garage Doors Cranbourne | Colorbond Roller Doors | (03) 9003 0108"
+  description="Colorbond roller garage doors for Cranbourne and the City of Casey — durable, budget-friendly, simple. Single $1.5K–$2.4K, double $2.2K–$3.2K. Insulated options. Centurion smart Wi-Fi openers."
+  canonical="https://cranbournegaragedoorco.com.au/services/roller-doors/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Durable, budget-friendly, simple</span>
+      <h1>Colorbond roller doors in <span class="accent">Cranbourne &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        The classic Australian corrugated-steel garage door &mdash; durable,
+        simple, budget-friendly. Best where ceiling height is tight (only
+        needs ~250mm headroom) or where the budget rules out a sectional.
+        Centurion Australian-made, B&amp;D Smart Phantom available, smart
+        Wi-Fi openers as standard.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The roller doors we install.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Centurion Roller (standard Colorbond):</strong> Australian-made, durable, 25-year curtain warranty. The default. ~$1,500&ndash;$2,400 single, $2,200&ndash;$3,200 double installed.</li>
+          <li><strong>Centurion Insulated Roller:</strong> Foam-backed curtain, R-1.5 to R-2.0 insulation. ~$1,900&ndash;$2,900 single, $2,700&ndash;$3,800 double installed.</li>
+          <li><strong>B&amp;D Roll-A-Door (standard):</strong> Strong on warranty (10 years), excellent finish quality, full Colorbond range. ~$1,700&ndash;$2,600 single, $2,400&ndash;$3,500 double installed.</li>
+          <li><strong>B&amp;D Roll-A-Door Premium (insulated):</strong> Insulated curtain, smart-opener ready. ~$2,200&ndash;$3,200 single, $2,900&ndash;$4,200 double installed.</li>
+          <li><strong>Steel-Line Roller (commercial-grade for workshops):</strong> Heavy-duty curtain and drum, higher cycle rating, ideal for home workshops. ~$2,100&ndash;$3,100 single, $2,800&ndash;$4,200 double installed.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">When a roller door beats a sectional.</h3>
+        <ul>
+          <li><strong>Tight ceiling height:</strong> roller drum needs ~250mm above the opening; sectional needs ~300mm headroom plus a 2.5m horizontal track along the ceiling. In a 2.1m-ceiling garage with a 2.0m door opening, a sectional often won&rsquo;t fit even with the low-headroom kit, but a roller will.</li>
+          <li><strong>Budget-driven decisions:</strong> a roller door is $500&ndash;$1,000 cheaper than equivalent sectional for the same opening size.</li>
+          <li><strong>Detached garages, sheds, workshops:</strong> where insulation isn&rsquo;t the priority and the door cycles less than twice a day, a standard Colorbond roller is the right call.</li>
+          <li><strong>The classic Australian look:</strong> if you specifically want the corrugated continuous-curtain look (rather than horizontal-panel sectional), the roller is the only door that delivers it.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">When a sectional beats a roller.</h3>
+        <ul>
+          <li>Bedroom or home office directly above the garage (insulated sectional + belt-drive is quieter).</li>
+          <li>Garage attached to a heated/cooled house (sectional has 2&ndash;3x better insulation).</li>
+          <li>You want a timber-look finish (sectionals offer convincing timber-grain print; roller doors don&rsquo;t).</li>
+          <li>You want maximum security (sectional&rsquo;s interlocking panels resist lever attacks better than a roller curtain).</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Common roller-door failures we repair.</h3>
+        <ul>
+          <li><strong>Drum spring weakening:</strong> door becomes hard to lift manually, opener struggles. Spring replacement $300&ndash;$500.</li>
+          <li><strong>Curtain rust at the bottom rail:</strong> where the curtain touches the slab. Repair or replacement depending on extent &mdash; usually $400&ndash;$800 for a partial curtain re-section.</li>
+          <li><strong>Bent corrugation (after car contact):</strong> single corrugation can&rsquo;t usually be straightened cleanly. Curtain replacement is $700&ndash;$1,400, often cheaper than full door replacement.</li>
+          <li><strong>End-cap / track noise:</strong> nylon end-caps wear, causing rattle. $80&ndash;$180 to replace.</li>
+          <li><strong>Opener failure:</strong> swap for Centurion Reno smart opener &mdash; $700&ndash;$1,100 fitted.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Smart Wi-Fi opener compatibility.</h3>
+        <p>
+          Centurion Reno is the most popular smart opener for roller doors in
+          the Casey area. Wi-Fi, smartphone app, Google Home and Alexa
+          compatibility, optional battery backup, geofencing, away-alerts.
+          B&amp;D Smart Phantom also works on rollers (designed for both door
+          types). We install one of these on every new roller-door job unless
+          the customer specifies otherwise.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we install roller doors.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free roller door consultation.</h2>
+        <p>Colorbond colour samples on the van. Fixed quote within 48 hours. Single-day install.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

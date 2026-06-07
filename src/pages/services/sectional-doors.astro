@@ -1,0 +1,121 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the difference between sectional and roller doors?", "acceptedAnswer": { "@type": "Answer", "text": "A sectional door is made of 4–6 horizontal panels hinged together; it lifts vertically along tracks then slides back horizontally along the ceiling. A roller door is a single continuous corrugated curtain that rolls up into a drum at the top of the opening. Sectional doors are quieter, better insulated, more secure and don't bunch at the top (so they don't lose headroom). Roller doors are cheaper, faster to install, and need almost no headroom — better where ceiling height is tight." }},
+    { "@type": "Question", "name": "Are insulated sectional doors worth the extra cost?", "acceptedAnswer": { "@type": "Answer", "text": "Yes if the garage is attached to a heated/cooled house, or used as a workshop, or has a bedroom above. A single-skin (non-insulated) sectional has an R-value of around 0.4–0.6; a double-skin insulated sectional with polyurethane foam core is R-2.5–R-4.0 — five to seven times the insulation. The cost difference is $300–$600 over single-skin. Pays back through reduced heat-pump load on the adjacent living areas, and through dramatically lower opener noise (the foam absorbs the panel resonance)." }},
+    { "@type": "Question", "name": "What sizes do sectional doors come in?", "acceptedAnswer": { "@type": "Answer", "text": "Standard sizes: 2.4m wide × 2.1m high (single garage), 3.0m × 2.1m (wider single), 4.8–5.0m × 2.1m (double), 5.4m × 2.4m (premium double). Custom sizes available in 10mm increments up to 6.0m wide and 3.0m tall. Most Casey new-estate homes use 5.0m × 2.1m double sectionals; older Cranbourne village singles are usually 2.4m × 2.0m." }},
+    { "@type": "Question", "name": "Can I get a sectional door in a timber look?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. B&D's Aero Timber and Steel-Line's Cedar-Look ranges are insulated steel sectionals with a printed timber-grain finish on the outer skin. Surprisingly convincing at 5m+ distance, zero maintenance, same warranty as Colorbond. Adds $400–$900 to a standard install. For genuine timber sectionals (Western Red Cedar, Pacific Cedar) we install those too — beautiful, expensive ($6,500–$11,000), needs oiling every 12–18 months and lasts about 15 years." }},
+    { "@type": "Question", "name": "Will a sectional door fit in my 2.1m ceiling garage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — with a low-headroom track kit. Standard sectional door tracks need about 300mm of headroom above the door (so a 2.1m door needs a 2.4m ceiling). The low-headroom kit reconfigures the cable drums and trolley so only 100mm is needed above the door. Common upgrade for older Hampton Park, Endeavour Hills and Cranbourne village garages. Adds $350–$500 to the standard install cost." }},
+    { "@type": "Question", "name": "How secure are sectional doors against break-ins?", "acceptedAnswer": { "@type": "Answer", "text": "Much more secure than tilt doors and slightly more secure than roller doors. The panels are 18–42mm thick (insulated), interlock at the hinges, and run inside steel tracks that can't be levered off the wall. Modern openers have rolling-code remotes (the code changes every press — un-clonable), automatic re-engagement after the manual release is pulled, and tamper alerts via the smart app. We always recommend the smart-opener tamper-alert + smartphone notification combination for the inner-Casey ring." }}
+  ]
+};
+---
+<Layout
+  title="Sectional Garage Doors Cranbourne | Insulated Steel & Timber-Look | (03) 9003 0108"
+  description="Insulated sectional garage doors for Cranbourne and the City of Casey — B&D, Steel-Line, Dominator. Insulated steel and timber-look finishes. Low-headroom kits for older garages. $1.8K–$8K supplied and installed."
+  canonical="https://cranbournegaragedoorco.com.au/services/sectional-doors/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">The modern default</span>
+      <h1>Sectional garage doors in <span class="accent">Cranbourne &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Insulated steel and timber-look sectional doors &mdash; quieter, better
+        insulated and more secure than roller or tilt doors. Lift vertically
+        then slide along the ceiling, so they don&rsquo;t arc into the driveway.
+        The modern default for 90% of new Casey installs.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The sectional doors we install.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>B&amp;D Firmadoor (single-skin Colorbond):</strong> Budget end. Solid for low-cycle garages and rental properties. ~$1,800&ndash;$2,400 single installed.</li>
+          <li><strong>B&amp;D Panelift / Steel-Line Standard (double-skin insulated):</strong> The mid-range default. Insulated steel-foam-steel panel, quiet, well-sealed. ~$2,400&ndash;$3,500 single, $3,000&ndash;$4,500 double installed.</li>
+          <li><strong>B&amp;D Panelift Icon / Steel-Line Premium (premium insulated):</strong> Thicker panel, premium internal skin, longer warranty, smoother operation. ~$3,500&ndash;$5,500 double installed.</li>
+          <li><strong>B&amp;D Aero Timber / Steel-Line Cedar-Look (timber-look insulated):</strong> Insulated steel with convincing printed timber-grain outer skin. Zero maintenance, looks like timber. ~$4,200&ndash;$7,500 double installed.</li>
+          <li><strong>Western Red Cedar / Pacific Cedar (genuine timber):</strong> Real timber sectional, beautiful, needs oiling every 12&ndash;18 months. ~$6,500&ndash;$11,000 single or double installed.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why sectional is the modern default.</h3>
+        <ul>
+          <li><strong>Lifts vertically:</strong> doesn&rsquo;t arc out into the driveway like a tilt door &mdash; you can park 200mm from the door without it hitting your bumper.</li>
+          <li><strong>Better insulation:</strong> double-skin insulated panel is R-2.5 to R-4.0, vs single-skin Colorbond at R-0.5. Big difference if the garage is attached to a heated/cooled house.</li>
+          <li><strong>Quieter operation:</strong> the panel resonance is absorbed by the foam core. Combined with a belt-drive opener, the whole door operates at ~50 dB.</li>
+          <li><strong>More headroom inside:</strong> the door slides flat along the ceiling, so you keep full headroom under the open door (unlike a roller, which bunches into a drum at the front).</li>
+          <li><strong>More secure:</strong> 18&ndash;42mm thick interlocking panels in steel tracks. Can&rsquo;t be levered off the wall.</li>
+          <li><strong>Custom sizes:</strong> any width 1.8&ndash;6.0m, any height up to 3.0m, in 10mm increments.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Insulation levels.</h3>
+        <ul>
+          <li><strong>Single-skin (non-insulated):</strong> R-0.4 to R-0.6. Cheapest. Fine for detached garages and rentals.</li>
+          <li><strong>Double-skin polyurethane foam (insulated):</strong> R-2.5 to R-4.0. The standard for attached garages and habitable-room-above-garage layouts.</li>
+          <li><strong>Triple-skin / premium foam (heavily insulated):</strong> R-4.0 to R-5.5. For workshops, gyms, garages converted to teen retreats.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Low-headroom track kit (for older Casey garages).</h3>
+        <p>
+          Standard sectional door tracks need ~300mm of headroom above the closed
+          door. Older Casey garages (1980s&ndash;2000s in Hampton Park, Endeavour
+          Hills, Cranbourne township) often have 2.1m ceiling heights with 2.0m
+          openings &mdash; 100mm of headroom isn&rsquo;t enough for standard.
+          Solution: a low-headroom track kit reconfigures the cable drums and
+          trolley to need only 100mm above the door. Same door, same opener,
+          same warranty. Adds $350&ndash;$500 to the standard install.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Colorbond colour-match.</h3>
+        <p>
+          All major brands stock the full Colorbond range plus the most popular
+          custom colours: Surfmist, Monument, Basalt, Woodland Grey, Dune,
+          Shale Grey, Wallaby, Cottage Green, Ironstone. On the assessment visit
+          we colour-match to your roof or guttering &mdash; whichever the
+          front-of-house elevation reads off most strongly. Custom colour adds
+          5&ndash;10 business days to lead time vs stock colours.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we install sectional doors.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free sectional door consultation.</h2>
+        <p>Brand and colour samples on the van. Fixed quote within 48 hours. Single-day install.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
